@@ -1,0 +1,49 @@
+10
+
+dir
+32010
+svn://sol-vsi-sandbox.vitshoppe.com/vitaminshoppe/ATG-10.2-Upgrade/trunk/buildtools/htdocs/vsi/web/fonts
+svn://sol-vsi-sandbox.vitshoppe.com/vitaminshoppe
+
+
+
+2014-02-11T19:36:03.400503Z
+22533
+akannabiran
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2875fe11-6577-0410-bfa2-a26be8160a37
+
+corisande
+dir
+
+corisandebold
+dir
+
+corisandebolditalic
+dir
+
+corisandeitalic
+dir
+
+corisandelight
+dir
+
+corisandelightitalic
+dir
+
+louisiana
+dir
+

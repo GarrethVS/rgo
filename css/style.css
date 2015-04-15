@@ -1,0 +1,4953 @@
+/*----- custom fonts begins ----- */
+@font-face {
+  font-family: 'corisanderegular';
+  src: url(../fonts/corisande/corisanderegular.eot);
+  src: local('☺'), url(../fonts/corisande/corisanderegular.woff) format('woff'), url(../fonts/corisande/corisanderegular.ttf) format('truetype'), url(../fonts/corisande/corisanderegular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'corisandeitalic';
+  src: url(../fonts/corisandeitalic/corisandeitalic.eot);
+  src: local('☺'), url(../fonts/corisandeitalic/corisandeitalic.woff) format('woff'), url(../fonts/corisandeitalic/corisandeitalic.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'corisandelight';
+  src: url(../fonts/corisandelight/corisandelight.eot);
+  src: local('☺'), url(../fonts/corisandelight/corisandelight.woff) format('woff'), url(../fonts/corisandelight/corisandelight.ttf) format('truetype'), url(../fonts/corisandelight/corisandelight.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'corisandelightitalic';
+  src: url(../fonts/corisandelightitalic/corisandelightitalic.eot);
+  src: local('☺'), url(../fonts/corisandelightitalic/corisandelightitalic.woff) format('woff'), url(../fonts/corisandelightitalic/corisandelightitalic.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'corisandebold';
+  src: url(../fonts/corisandebold/corisandebold.eot);
+  src: local('☺'), url(../fonts/corisandebold/corisandebold.woff) format('woff'), url(../fonts/corisandebold/corisandebold.ttf) format('truetype'), url(../fonts/corisandebold/corisandebold.svg) format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'corisandebolditalic';
+  src: url(../fonts/corisandebold/corisandebold.eot);
+  src: local('☺'), url(../fonts/corisandebold/corisandebold.woff) format('woff'), url(../fonts/corisandebold/corisandebold.ttf) format('truetype'), url(../fonts/corisandebold/corisandebold.svg) format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'louisiana';
+  src: url(../fonts/louisiana/louisiana.eot);
+  src: local('☺'), url(../fonts/louisiana/louisiana.woff) format('woff'), url(../fonts/louisiana/louisiana.ttf) format('truetype'), url(../fonts/louisiana/louisiana.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*----- custom fonts end ----- */
+
+/*----- header begins -----*/
+header {
+  background: #fff;
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 9;
+}
+
+/*----- fixed header begins -----*/
+.main-header.fixed{
+  box-shadow: 0 2px 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 2px 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 2px 3px 0 #c2c2c2;
+  position: fixed;
+  top:-50px;
+  z-index: 11;
+}
+.main-header.fixed .utility-top-expand{
+  background: transparent;
+  height: 50px;
+  overflow:hidden;
+  width: 100%;
+}
+
+.main-header.fixed #header-top{
+  height: 70px;
+}
+.main-header.fixed #header-top #logo-section {
+  margin: 0 auto;
+  min-height: 58px;
+  padding: 12px 0 0;
+  position: relative;
+  width: 1000px;
+  z-index: 10;
+}
+
+.main-header.fixed #header-top #logo a {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) 0 -194px no-repeat;
+  color: #fff;
+  float: left;
+  font-size: 1px;
+  height: 32px;
+  margin-top: 7px;
+  text-indent: -9999px;
+  width: 288px;
+}
+
+.main-header.fixed #header-top #search {
+  height: 44px;
+  margin-left: 30px;
+  width: 315px;
+}
+
+.main-header.fixed #header-top #search input[type='text'] {
+  background: #ececec;
+  border: solid 2px #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #0072ce;
+  font-size: 18px;
+  height: 44px;
+  letter-spacing: -1px;
+  margin: 0;
+  padding: 5px 40px 0 15px;
+  width: 315px;
+}
+
+.main-header.fixed #header-top #search input[type='button'],
+.main-header.fixed #header-top #search input[type='submit'] {
+  top: 10px;
+}
+
+.main-header.fixed #header-top #utility-nav {
+  margin-left: 32px;
+}
+
+.turnto_off{display:block}
+.turnto_on{display:none}
+
+
+.main-header.fixed #header-top #utility-nav .links-block .utility-links {
+  color: #fff;
+}
+
+.main-header.fixed #header-top #utility-nav .links-block:hover .utility-links {
+  color: #fff;
+}
+
+.main-header.fixed .nav-block-container #secondary-nav {
+  padding: 0;
+}
+
+.main-header.expended .nav-block-container #secondary-nav {
+  box-shadow: 0 2px 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 2px 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 2px 3px 0 #c2c2c2;
+  padding: 0;
+}
+
+.nav-block-container.nav-fixed {
+  float: left;
+  position: fixed;
+  width: 100%;
+}
+
+.main-header.fixed .header-show, .main-header.fixed .header-hide{
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) -47px -147px no-repeat;
+  display: none;
+  float: left;
+  height: 44px;
+  position: absolute;
+  width: 30px;
+  z-index: 9;
+  top:100%;
+}
+.main-header.fixed .header-show, .main-header.fixed .header-hide{
+  display:block;
+}
+.main-header.fixed .header-hide {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) -78px -147px no-repeat;
+}
+/*----- fixed header begins -----*/
+
+/*----- header top bar begins -----*/
+header #header-top {
+  background: #fff;
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 13;
+}
+
+header #header-top #logo-section {
+  margin: 0 auto;
+  min-height: 80px;
+  padding: 20px 0 0;
+  position: relative;
+  width: 1000px;
+  z-index: 10;
+}
+
+#logo {
+	float: left;
+}
+
+#logo a {
+	background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) 0 0 no-repeat;
+  color: #fff;
+	float: left;
+  font-size: 1px;
+	height: 62px;
+  text-indent: -9999px;
+	width: 226px;
+}
+
+#search {
+	float: left;
+	height: 60px;
+	margin-left:34px;
+	position: relative;
+	width: 375px;
+}
+
+#search input[type='text'] {
+  background: #ececec;
+  border: solid 2px #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #0072ce;
+  font-size: 24px;
+  height: 60px;
+  letter-spacing: -1px;
+  margin: 0;
+  padding: 5px 40px 0 15px;
+  width: 375px;
+}
+
+#search.autosuggest input[type='text'],
+.main-header.fixed #header-top #search.autosuggest input[type='text'] {
+  background: #fff;
+  border: solid 2px #f2a900;
+  color: #808080;
+  font-size: 18px;
+  outline: none;
+}
+
+#search input[type='button'],
+#search input[type='submit'] {
+	background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -136px 0 no-repeat;
+	border: none;
+	cursor: pointer;
+  font-size: 1px;
+	float: left;
+	height: 24px;
+	position: absolute;
+	right: 20px;
+  text-indent: -9999px;
+	top: 17px;
+	width: 24px;
+}
+
+.autosuggest-box, #search .ui-autocomplete {
+  background: #fff;
+  border: solid 1px #e5e5e5;
+  border-top: none;
+  border-radius: 0;
+  box-shadow: 0 2px 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 2px 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 2px 3px 0 #c2c2c2;
+  display: none;
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=10, Color='#33000000');
+  float: left;
+  left: 0 !important;
+  padding: 10px;
+  position: absolute;
+  top: 60px !important;
+  width: 353px !important;
+}
+
+.fixed .autosuggest-box, .fixed #search .ui-autocomplete {
+  background: #fff;
+  border: solid 1px #e5e5e5;
+  border-top: none;
+  box-shadow: 0 2px 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 2px 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 2px 3px 0 #c2c2c2;
+  display: none;
+  float: left;
+  padding: 10px;
+  position: absolute;
+  top: 44px !important;
+  width: 293px !important;
+}
+
+.autosuggest-box li.ui-menu-item, #search .ui-autocomplete li.ui-menu-item{
+  list-style-image: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+.autosuggest-box li.ui-menu-item a, #search .ui-autocomplete li.ui-menu-item a {
+  background: none;
+  border: none !important;
+  color: #808080;
+  display: block;
+  font: 18px "corisandebold";
+  line-height: 42px;
+  padding: 0 8px;
+  margin: 0 !important;
+}
+
+.autosuggest-box li.ui-menu-item a span, #search .ui-autocomplete li.ui-menu-item span {
+  font-family: 'corisandelight';
+}
+
+.autosuggest-box li.ui-menu-item:hover a, #search .ui-autocomplete li.ui-menu-item a.ui-state-focus{
+  background: #ffd400;
+}
+
+.autosuggest-box li:hover a {
+  text-decoration: none;
+}
+
+#utility-nav {
+	float: left;
+  margin: 10px 0 0 15px;
+  max-width: 335px;
+	min-width: 300px;
+	position: relative;
+	width: auto;
+}
+
+#utility-nav .links-block {
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+#utility-nav .links-block:last-child {
+  margin-right: 0;
+}
+
+#utility-nav .links-block .utility-links {
+  color: #0173ce;
+}
+
+#utility-nav .links-block:hover .utility-links {
+  color: #f2a900;
+  text-decoration: none;
+}
+
+#utility-nav .links-block .utility-links.my-account {
+  color: #f2a900;
+}
+
+#utility-nav .links-block.user-link-block{
+  width: 66px;
+}
+
+#utility-nav .links-block.help{
+  width: 54px;
+}
+
+#utility-nav .links-block.call{
+  width: 49px;
+}
+
+#utility-nav .links-block.chat{
+  width: 55px;
+}
+
+#utility-nav .links-block.stores{
+  width: 64px;
+}
+
+#utility-nav .links-block.cart,
+#utility-nav .links-block.cart-empty {
+  width: 45px;
+}
+
+#utility-nav .user-link-block .down-arrow{
+  display: none;
+  position: absolute;
+  top: -31px;
+  width: 100%;
+}
+#utility-nav .user-link-block .down-arrow span{
+  border-bottom: none;
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+  border-top: solid 15px #f2f2f2;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-header.fixed #utility-nav .user-link-block .down-arrow{
+  top: -23px;
+}
+
+#utility-nav .my-account .icon-login {
+  background-position: -110px -81px;
+}
+
+#utility-nav .cart-full .count {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -142px -55px no-repeat;
+  color: #fff;
+  font-size: 9px;
+  height: 19px;
+  line-height: 21px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -7px;
+  width: 19px;
+}
+
+#utility-nav .cart-empty .count {
+  display: none;
+}
+
+#utility-nav .header-icons {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) 0 0 no-repeat;
+  clear: both;
+  display: inline-block;
+  height: 25px;
+  width: auto;
+}
+
+#utility-nav .icon-help {
+  background-position: 0 0;
+  width: 15px;
+}
+
+#utility-nav .links-block:hover .utility-links .icon-help {
+  background-position: 0 -81px;
+}
+
+#utility-nav .icon-call {
+  background-position: -17px 0;
+  width: 18px;
+}
+
+#utility-nav .icon-store {
+  background-position: -65px 0;
+  width: 18px;
+}
+
+#utility-nav .links-block:hover .utility-links .icon-call {
+  background-position: -17px -81px;
+}
+
+#utility-nav #lpChatHeader2 .icon-chat {
+  height: 0px;
+  width: 0px;
+}
+
+
+#utility-nav #lpChatHeader2 .icon-chat.available,
+#utility-nav #lpChatHeader2 .icon-chat.unavailable {
+  height: 25px;
+  width: 22px;
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) 0 0 no-repeat; 
+}
+
+#utility-nav #lpChatHeader2 .icon-chat.available {
+  background-position: -39px 0;
+  width: 24px;
+}
+
+#utility-nav #lpChatHeader2:hover .icon-chat.available {
+  background-position: -39px -81px;
+}
+
+#utility-nav #lpChatHeader2 .icon-chat.unavailable {
+  background-position: -161px 0;
+  width: 24px;
+}
+
+#utility-nav #lpChatHeader2:hover .unavailable.icon-chat {
+  background-position: -136px -81px;
+}
+
+.browse-box, .cart-box, .contact-box {
+  min-height: 170px;
+}
+
+.browse-box .text, .cart-box .text, .contact-box .text {
+  margin-bottom: 10px; 
+}
+
+#utility-nav .links-block:hover .utility-links .icon-store {
+  background-position: -65px -81px;
+}
+
+#utility-nav .icon-cart {
+  background-position: -85px 0;
+  width: 23px;
+}
+
+#utility-nav .links-block:hover .utility-links .icon-cart {
+  background-position: -85px -81px;
+}
+
+#utility-nav .icon-login {
+  background-position: -110px 0;
+  width: 26px;
+}
+
+#utility-nav .links-block:hover .utility-links .icon-login {
+  background-position: -110px -81px;
+}
+
+#utility-nav .links-block .utility-links .user-name {
+  -ms-word-break: break-all;
+  word-break: break-all;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+#utility-nav .links-block .utility-sub-menu {
+  background: #fff;
+  box-shadow: 0 2px 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 2px 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 2px 3px 0 #c2c2c2;
+  display: none;
+  float: left;
+  position: absolute;
+  top: 60px;
+}
+
+#utility-nav .links-block .utility-sub-menu .arrow-top {
+  border-bottom: solid 15px #e5e5e5;
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+  border-top: none;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  top: -15px;
+}
+
+#utility-nav .links-block .utility-sub-menu h4 {
+  background: #e5e5e5;
+  color: #0072ce;
+  padding: 16px 0 13px;
+  text-align: center;
+}
+
+#utility-nav .links-block .help {
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+}
+
+#utility-nav .links-block .call,
+#utility-nav .links-block .chat-available,
+#utility-nav .links-block .chat-unavailable {
+  left: 50%;
+  margin-left: -160px;
+  width: 320px;
+}
+
+#utility-nav .links-block.available .chat-unavailable {
+  display: none!important;
+}
+
+#utility-nav .links-block.unavailable .chat-available {
+  display: none!important;
+}
+
+#utility-nav .links-block .text-block .chat-live,
+#utility-nav .links-block .text-block .get-directions {
+  margin-top: 15px;
+  padding-right: 5%;
+  width: 95%;
+}
+
+#utility-nav .links-block .text-block .chat-live .button-red {
+  background-position: right 28px;
+  height: auto;
+  padding: 15px 40px 13px 20px;
+  width: 230px;
+}
+
+#utility-nav .links-block.available .text-block .chat-live .button-red {
+  line-height: normal;
+}
+
+#utility-nav .links-block .chat-unavailable .text-block .chat-live .button-red {
+  background-position: right 15px;
+}
+
+#utility-nav .links-block .text-block .get-directions .button-red {
+  background-position: 119px 15px;
+  padding: 15px 20px 0 11px;
+  width: 109px;
+}
+
+.windows #utility-nav .links-block .text-block .get-directions .button-red {
+  background-position: 119px 16px;
+}
+
+#utility-nav .links-block .store-locator,
+#utility-nav .links-block .store-locator-enabled {
+  left: 50%;
+  margin-left: -90px;
+  width: 180px;
+}
+
+#utility-nav .links-block.store-nearest .store-locator-enabled {
+  display: none!important;
+}
+
+#utility-nav .links-block.store-nearby .store-locator {
+  display: none!important;
+}
+
+#utility-nav .links-block .store-locator .text-block {
+  padding: 10px 20px 20px;
+}
+
+#utility-nav .store-locator .text-block li:first-child {
+  margin-top: 10px;
+}
+
+#utility-nav .links-block .store-locator .map {
+  height: 106px;
+  overflow: hidden;
+  width: 140px;
+}
+
+#utility-nav .store-locator .text-block p {
+  padding: 20px 0 0 8px;
+}
+
+#utility-nav .links-block .text-block {
+  overflow: hidden;
+  padding: 10px 15px 20px;
+}
+
+#utility-nav .links-block .text-block li {
+  color: #53565a;
+  float: left;
+  margin-top: 15px;
+  width: 100%;
+  text-align: left;
+}
+
+#utility-nav .links-block .call .text-block li .red-link-small {
+  background-position: right -589px;
+}
+
+#utility-nav .links-block .call .text-block li .red-link-small:hover {
+  background-position: right -647px;
+}
+
+.windows #utility-nav .links-block .call .text-block li .red-link-small {
+  background-position: right -587px;
+}
+
+.windows #utility-nav .links-block .call .text-block li .red-link-small:hover {
+  background-position: right -645px;
+}
+
+#utility-nav .links-block .text-block li .corisande-bold {
+  color: #f04937;
+}
+
+#utility-nav .links-block .text-block li .help-links {
+  color: #0072ce;
+}
+
+#utility-nav .links-block .text-block li .help-links:hover {
+  color: #003da5;
+  text-decoration: none;
+}
+
+#utility-nav .links-block .text-block .see-all {
+  margin-top: 20px;
+}
+
+#utility-nav .links-block .text-block .see-all a {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -591px no-repeat;
+  color: #f04937;
+  padding-right: 12px;
+}
+
+#utility-nav .links-block .text-block .see-all a:hover {
+  background-position: right -649px;
+  color: #b83628;
+  text-decoration: none;
+}
+
+#utility-nav .links-block .cart-block {
+  right: -18px;
+  width: 335px;
+}
+
+#utility-nav .links-block .cart-block .arrow-top {
+  left: 279px;
+  margin-left: 0;
+}
+
+#utility-nav .links-block .cart-block h4 {
+  color: #f58220;
+}
+
+#utility-nav .links-block .cart-rows {
+  overflow: hidden;
+  padding: 15px 10px 15px 20px;
+}
+
+#utility-nav .links-block .cart-rows {
+  height: auto;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-top: 0;
+}
+
+#utility-nav .links-block .bottom-block {
+  background: #f9f9f9;
+  padding-top: 0;
+}
+
+#utility-nav .links-block .cart-rows li {
+  border-top: solid 2px #f2f2f2;
+  overflow: hidden;
+    padding: 15px 0;
+    }
+    
+#utility-nav .links-block .cart-rows li:first-child,
+#utility-nav .links-block .cart-rows .free-item {
+  border-top: none;
+}
+
+#utility-nav .links-block .cart-rows .empty {
+  font-size: 18px;
+  padding: 41px 0 54px;
+} 
+
+#utility-nav .links-block .cart-rows dl {
+  overflow: hidden;
+}
+
+#utility-nav .links-block .cart-rows dt {
+  float: left;
+  text-align: center;
+  width: 75px;
+}
+
+#utility-nav .links-block .cart-rows dt a img {
+width: 100%;
+}
+
+#utility-nav .links-block .cart-rows dd {
+  float: left;
+  padding: 10px 0 0 5px;
+  text-align: left;
+  width: 190px;
+}
+
+#utility-nav .links-block .cart-rows dd .brand,
+#utility-nav .links-block .cart-rows dd .title {
+  float: left;
+  width: 100%;
+}
+
+#utility-nav .links-block .cart-rows dd .title {
+  margin-top: 6px;
+}
+
+#utility-nav .links-block .cart-rows dd .brand a {
+  color: #808080;
+  font: 12px 'corisanderegular';
+}
+
+#utility-nav .links-block .cart-rows dd .title a {
+  color: #808080;
+  font: 14px 'corisanderegular';
+}
+
+#utility-nav .links-block .cart-rows dd .title a:hover {
+  color: #0072ce;
+}
+
+#utility-nav .links-block .cart-rows dd .details-row {
+
+  float: left;
+  font-size: 12px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+#utility-nav .links-block .cart-rows dd .details-row .qty {
+  float: left;
+  width: 30%;
+}
+
+#utility-nav .links-block .cart-rows dd .details-row .price {
+  float: right;
+  text-align: right;
+  width: 65%;
+}
+
+#utility-nav .links-block .cart-rows dd .details-row .price .strike {
+  margin-right: 10px;
+}
+
+#utility-nav .links-block .cart-rows .free-messaging {
+  background: #f2f2f2;
+  color: #f04937;
+  float: left;
+  font: 13px 'corisandebold';
+  margin-top: 5px;
+  min-width: 96%;
+  padding: 4px 2% 2px;
+  text-align: center;
+}
+
+#utility-nav .links-block .cart-rows .free-messaging.limited {
+  margin: 0 6%;
+  min-width: 84%;
+  padding: 4px 2% 2px;
+}
+
+#utility-nav .links-block .cart-rows.bottom-block li {
+  overflow: hidden;
+  padding: 12px 23px 12px;
+}
+
+#utility-nav .links-block .cart-rows.bottom-block li:first-child {
+  border-top: solid 2px #f2f2f2;
+}
+
+#utility-nav .links-block .bottom-block li .text {
+  color: #f04937;
+  font: 18px 'corisandebold';
+  text-align: left;
+  width: 45%;
+}
+
+#utility-nav .links-block .bottom-block li .button-orange {
+  background: #f58220;
+  height: 28px;
+  letter-spacing: -1px;
+  margin-top: 25px;
+  padding: 16px 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+#utility-nav .links-block .cart-rows.bottom-block li .button-orange {
+  height: 29px;
+  letter-spacing: normal;
+  padding: 15px 0 0;
+}
+
+#utility-nav .links-block .cart-rows.bottom-block li .button-orange.cart-checkout-button{
+height: 44px;
+border: none;
+padding: 14px 0 12px 17px;
+}
+
+#utility-nav .links-block .cart-rows.bottom-block li .button-orange.cart-checkout-button.disabled{
+opacity:0.3;
+cursor:default;
+}
+
+#utility-nav .links-block .cart-rows.bottom-block li .button-orange.cart-checkout-button.disabled:hover{
+  background: #f58220;
+}
+
+#utility-nav .links-block .bottom-block li .button-orange:hover {
+  background-color: #de6600;
+}
+
+#utility-nav .links-block .bottom-block li .button-orange .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/icon-lock.png) 0 0 no-repeat;
+  display: inline-block;
+  height: 13px;
+  margin-right: 9px;
+  width: 10px;
+}
+
+#utility-nav .links-block .bottom-block li .shipping-text {
+  color: #f58220;
+  float: left;
+  font: 12px 'corisandebold';
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+
+/*----- header top bar end -----*/
+
+/*----- login bar begins -----*/
+#login-bar {
+  background: #f2f2f2;
+  border-bottom: solid 1px #ebebeb;
+  display: none;
+  float: left;
+  position:relative;
+  width: 100%;
+  z-index: 11;
+}
+
+#login-bar .login-wrapper {
+  color: #fff;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+  text-align: right;
+  width: 1000px;
+}
+
+/*----- login bar end -----*/
+
+/*----- main navigation begins -----*/
+.nav-block-container {
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 9;
+}
+.normalMode {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) 0 -64px repeat-x;
+  float: left;
+  height: 80px;
+  position: relative;
+  width: 100%;
+  z-index: 9;
+}
+.minimizedMode {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) 0 -64px repeat-x;
+  float: left;
+  height: 80px;
+  position: relative;
+   z-index: 9;
+}
+
+nav #nav-inner {
+  height: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+}
+#nav-inner li {
+  display: block;
+  float: left;
+}
+
+#nav-inner li .primary {
+  background: transparent url(http://www.vitaminshoppe.com/images/nav-sap.png) 0 0 no-repeat;
+  color:#fff;
+  float: left;
+  font: 15px 'corisanderegular';
+  height: 76px;
+  line-height: 15px;
+  padding: 4px 13px 0;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 9
+}
+
+#nav-inner li .primary span {
+  display: table-cell;
+  height: 76px;
+  vertical-align: middle;
+}
+
+#nav-inner li:first-child .primary {
+  background: none;
+}
+
+#nav-inner > li:hover + li .primary {
+  background: transparent url(http://www.vitaminshoppe.com/images/nav-sap.png) 0 bottom no-repeat;
+}
+
+#nav-inner li.hover .primary {
+  background: #338dd8 url(http://www.vitaminshoppe.com/images/nav-sap.png) 0 0 no-repeat;
+  text-decoration: none;
+}
+
+#nav-inner li.first .primary {
+  background-image: none;
+}
+
+#nav-inner li.hover .primary span {
+  background: transparent url(http://www.vitaminshoppe.com/images/main-nav-arrow.png) center 67px no-repeat;
+}
+
+#nav-inner li .sub-menu {
+  background: #fff;
+  box-shadow: 0 0 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 0 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 0 3px 0 #c2c2c2;
+  float: left;
+  opacity: 0;
+  padding: 0 0 30px 40px;
+  top: 80px;
+  width: auto;
+}
+#nav-inner li.last-link {
+  position: relative;
+}
+#nav-inner li .sub-menu.right {
+  right: 0;
+}
+#nav-inner li.last-link .sub-menu.right{
+  right: 0 !important;
+}
+#nav-inner li .sub-menu.minimal {
+  /*max-width: 356px;*/
+  max-width: 412px;
+}
+
+#nav-inner li .sub-menu h2,
+#nav-inner li .sub-menu .heading {
+  color: #0072ce;
+  font: 18px 'corisandebold';
+}
+#nav-inner li .sub-menu .heading{
+  display: inline;
+}
+
+#nav-inner li ul {
+  float: left;
+  overflow: hidden;
+  margin: 0 0 20px;
+}
+
+#nav-inner li li {
+  background: none;
+  float: left;
+  margin: 30px 0px 0 0px;
+  padding-right: 40px;
+  max-width: 166px;
+  width: auto;
+}
+
+#nav-inner li:hover li {
+  background: none;
+}
+
+#nav-inner li li .heading {
+  margin: 0 0 12px 0;
+}
+
+#nav-inner li li a {
+  color: #808080;
+  display: block;
+  font: 12px 'corisanderegular';
+  margin-top: 5px;
+}
+
+#nav-inner li li a:hover {
+  color: #0072ce;
+}
+
+#nav-inner li li.non-sub a {
+  color: #0072ce;
+  font-size: 14px;
+  margin-top: 11px;
+}
+
+#nav-inner li li.non-sub a:first-child {
+  margin-top: 0;
+}
+
+#nav-inner li li.non-sub a:hover {
+  color: #003da5;
+}
+
+#nav-inner li li .shop-all {
+  font-family: 'corisandebold';
+  margin-top: 12px;
+}
+/*----- main navigation end -----*/
+
+/*----- secondary nav begins -----*/
+header #secondary-nav {
+  background: #f2f2f2;
+  clear: both;
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  padding: 14px 0;
+  position: relative;
+  width: 100%;
+  z-index: 8;
+}
+
+#secondary-nav .wrapper {
+  margin: 0 auto;
+  width: 948px;
+}
+
+#secondary-nav .vertical-banners {
+  float: left;
+  height: 26px;
+  margin-top: 13px;
+  overflow: hidden;
+  position: relative;
+  width: 570px;
+}
+
+#secondary-nav .text-banners {
+  float: left;
+  height: 26px;
+  width: 680px;
+}
+
+#secondary-nav .text-banners li {
+  color: #f58220;
+  float: left;
+  line-height: 26px;
+  width: 100%;
+}
+
+#secondary-nav .text-banners .red {
+  color: #f04937;
+}
+
+#secondary-nav .text-banners li .banner-link {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -999px no-repeat;
+  color: #f58220;
+  line-height: 30px;
+  padding-right: 12px;
+}
+
+.windows #secondary-nav .text-banners li .banner-link {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -997px no-repeat;
+}
+
+#secondary-nav .text-banners .red .banner-link {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -147px no-repeat;
+  color: #f04937;
+}
+
+.windows #secondary-nav .text-banners .red .banner-link {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -145px no-repeat;
+}
+
+#secondary-nav .text-banners li .icon-notification {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) 0 -25px no-repeat;
+  color: #fff;
+  float: left;
+  font: 15px 'corisandebold';
+  height: 26px;
+  line-height: 29px;
+  margin-right: 12px;
+  position: relative;
+  text-align: center;
+  width: 27px;
+}
+
+#secondary-nav .text-banners .red .icon-notification {
+  background-position: -160px -25px;
+}
+
+#secondary-nav .filters {
+  float: right;
+  margin-top: 5px;
+  width: 240px;
+}
+
+#secondary-nav .filters li {
+  float: left;
+  position: relative;
+}
+
+#secondary-nav .category-filter .first-level {
+  background: #fff;
+  box-shadow: 0 3px 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 3px 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 3px 3px 0 #c2c2c2;
+  display: none;
+  float: left;
+  left: 0;
+  position: absolute;
+  top: 38px;
+  width: 205px;
+}
+
+#secondary-nav .category-filter .first-level .links-block {
+  overflow: hidden;
+  padding: 12px 0px 8px;
+}
+
+#secondary-nav .category-filter .first-level .first-level-row {
+  float: left;
+  padding: 0 15px;
+  width: 175px;
+}
+
+#secondary-nav .category-filter .first-level .filter-links {
+  float: left;
+  padding: 10px 0;
+  width: 100%;
+  color: #808080 !important;
+}
+
+#secondary-nav .category-filter .first-level .first-level-row:hover .filter-links {
+  color: #003da5;
+  text-decoration: none;
+}
+
+#secondary-nav .shop-by-filter {
+  float: left;
+  margin: 5px 12px 0 0;
+  position: relative;
+  width: 114px;
+}
+
+#secondary-nav .shop-by-filter .shop-by {
+  background: #f58220;
+  float: left;
+  height: 40px;
+  line-height: 43px;
+  padding-left: 14px;
+  position: relative;
+  width: 100px;
+  z-index: 9;
+  color: #fff;
+}
+
+#secondary-nav .category-filter:hover .shop-by {
+  text-decoration: none;
+  position: relative;
+  background: #fff;
+  color: #f58220;
+}
+
+#secondary-nav .shop-by-filter .shop-by .icon-arrow-blue {
+  background: transparent url(http://www.vitaminshoppe.com/images/carat_white.png) right 0 no-repeat;
+  float: left;
+  height: 9px;
+  position: absolute;
+  right: 11px;
+  top: 17px;
+  width: 14px;
+}
+
+#secondary-nav .category-filter:hover .shop-by .icon-arrow-blue {
+  background-image: url(/images/sprite-icons.png);
+  background-position: right -10px;  
+}
+
+#secondary-nav .filters .reorder {
+  background: #f58220 url(/images/sprite-arrows.png) right 15px no-repeat;
+  color: #fff;
+  float: left;
+  height: 40px;
+  line-height: 43px;
+  padding: 0 20px;
+  position: relative;
+  width: 200px;
+  z-index: 8;
+}
+
+#secondary-nav .filters .reorder:hover {
+  background: #fff url(/images/sprite-arrows.png) 190px -986px no-repeat;
+  color: #f58220;
+  
+}
+
+#secondary-nav .filters .category-reorder:hover .reorder {
+  text-decoration: none;
+  position: relative;
+}
+
+#secondary-nav .filters .reorder .icon-arrow-orange {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) right 0 no-repeat;
+  float: left;
+  height: 9px;
+  position: absolute;
+  right: 11px;
+  top: 18px;
+  width: 14px;
+}
+
+#secondary-nav .filters .reorder .icon-rotation {
+  background: transparent url(http://www.vitaminshoppe.com/images/reorder-button-hover.png) 0 0 no-repeat;
+  float: left;
+  height: 28px;
+  margin: 6px 10px 0 2px;
+  /*left: 9px;
+  position: absolute;
+  top: 6px; */
+  width: 24px;
+}
+
+#secondary-nav .filters .reorder:hover .icon-rotation {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -28px -25px no-repeat;
+}
+
+#secondary-nav .filters .category-reorder .reorder-block {
+  background: #fff;
+  box-shadow: 0 2px 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 2px 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 2px 3px 0 #c2c2c2;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 380px;
+}
+
+#secondary-nav .filters .reorder-rows {
+  overflow: hidden;
+  padding: 15px 25px;
+}
+
+#secondary-nav .filters .reorder-rows li {
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+#secondary-nav .filters .reorder-rows dl {
+  overflow: hidden;
+}
+
+#secondary-nav .filters .reorder-rows dt {
+  float: left;
+  text-align: center;
+  width: 75px;
+}
+
+#secondary-nav .filters .reorder-rows dd {
+  float: left;
+  padding: 10px 0 0 5px;
+  text-align: left;
+  width: 250px;
+}
+
+#secondary-nav .filters .reorder-rows dd .product-block {
+  float: left;
+  width: 190px;
+}
+
+#secondary-nav .filters .reorder-rows dd .add-cart {
+  float: right;
+  text-align: center;
+  width: 50px;
+}
+
+#secondary-nav .filters .reorder-rows dd .add-cart a {
+  color: #f58220;
+  line-height: 12px;
+}
+
+#secondary-nav .filters .reorder-rows dd .add-cart a:hover {
+  text-decoration: none;
+}
+
+#secondary-nav .filters .reorder-rows dd .add-cart .icon-add-cart {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -162px -83px no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+#secondary-nav .filters .reorder-rows dd .title {
+  float: left;
+  width: 100%;
+}
+
+#secondary-nav .filters .reorder-rows dd .title a {
+  color: #53565a;
+}
+
+#secondary-nav .filters .reorder-rows dd .title a:hover {
+  color: #0072ce;
+}
+
+#secondary-nav .filters .reorder-rows dd .details-row {
+  color: #53565a;
+  float: left;
+  padding-top: 5px;
+  width: 100%;
+}
+
+#secondary-nav .filters .reorder-rows dd .details-row .qty {
+  float: left;
+  width: 45%;
+}
+
+#secondary-nav .filters .reorder-rows dd .details-row .price {
+  float: right;
+  text-align: right;
+  width: 45%;
+}
+
+#secondary-nav .filters .reorder-rows .checkout {
+  padding: 0 5% 0 0;
+  text-align: center;
+  width: 95%;
+}
+
+#secondary-nav .filters .reorder-rows .checkout .button-orange {
+  background-position: 225px 15px;
+  width: 270px;
+}
+
+/*----- secondary nav end -----*/
+
+/*----- header end -----*/
+
+/*----- home slider begins -----*/
+#home-slider {
+  background: #fff;
+  box-shadow: 0 0 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 0 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 0 3px 0 #c2c2c2;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 8;
+}
+
+#home-slider .slider-wrapper {
+  height: 410px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 15px 25px 0;
+  position: relative;
+  width: 950px;
+}
+
+#home-slider .slider-wrapper .gradient-left {
+  background: transparent url(http://www.vitaminshoppe.com/images/gradient-left.png) 0 0 no-repeat;
+  float: left;
+  height: 425px;
+  left: 15px;
+  position: absolute;
+  top: 0;
+  width: 50px;
+  z-index: 9;
+}
+
+#home-slider .slider-wrapper .gradient-right {
+  background: transparent url(http://www.vitaminshoppe.com/images/gradient-right.png) 0 0 no-repeat;
+  float: left;
+  height: 425px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 50px;
+  z-index: 9;
+}
+
+#home-slider .slider-container {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+#home-slider .slider-container .prev {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) 0 -155px no-repeat;
+  float: left;
+  height: 37px;
+  left: -20px;
+  margin-top: -19px;
+  position: absolute;
+  top: 50%;
+  width: 21px;
+}
+
+#home-slider .slider-container .next {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) -21px -155px no-repeat;
+  float: left;
+  height: 37px;
+  margin-top: -19px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 21px;
+}
+
+#home-slider .slider-main {
+  overflow: hidden;
+}
+
+#home-slider li {
+  float: left;
+  width: 950px;
+}
+
+#home-slider .image-block {
+  float: left;
+  width: 520px;
+}
+
+#home-slider .image-block img {
+  float: left;
+}
+
+#home-slider .products {
+  float: left;
+  margin-top: 170px;
+  position: relative;
+  width: 420px;
+}
+
+#home-slider .products .title {
+  color: #f58220;
+  float: left;
+  font-size: 72px;
+  left: 0;
+  margin-bottom: 30px;
+  position: absolute;
+  top: -120px;
+  width: 100%;
+}
+
+#home-slider .products .title strong {
+  color: #f2a900;
+}
+
+#home-slider .products dt {
+  float: left;
+  width: 150px;
+  text-align: right;
+}
+
+#home-slider .products dd {
+  float: left;
+  padding-left: 20px;
+  width: 200px;
+}
+
+#home-slider .products dd .text {
+  float: left;
+  font-size: 18px;
+  width: 100%;
+}
+
+#home-slider .products dd .price-row {
+  float: left;
+  font-size: 21px;
+  width: 100%;
+}
+
+#home-slider .products dd .price-row .sub {
+  font-size: 12px;
+}
+
+#home-slider .products dd .button-red {
+  margin-top: 30px;
+}
+/*----- home slider end -----*/
+
+/*----- sticky link begins -----*/
+#sticky-links {
+  float: left;
+  margin-left: -90px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+  z-index: 9;
+}
+
+.sticky {
+  position: fixed!important;
+  top: 10px!important;
+}
+
+#sticky-links a {
+  background: #e6e6e6;
+  color: #b2b2b2;
+  float: left;
+  height: 59px;
+  margin-bottom: 4px;
+  padding-top: 21px;
+  text-align: center;
+  width: 80px;
+}
+
+#sticky-links .active {
+  background: #00a9e0;
+  color: #fff;
+}
+
+#sticky-links .products .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) 0 -55px no-repeat;
+  clear: both;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+#sticky-links .products.active .icon,
+#sticky-links .products:hover .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -25px -55px no-repeat;
+}
+
+#sticky-links .products:hover {
+  background: #00a9e0;
+  color: #fff;
+  text-decoration: none;
+}
+
+#sticky-links .value .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -55px -55px no-repeat;
+  clear: both;
+  display: inline-block;
+  height: 24px;
+  width: 14px;
+}
+
+#sticky-links .value.active {
+  background: #62bb46;
+}
+
+#sticky-links .value.active .icon,
+#sticky-links .value:hover .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -70px -55px no-repeat;
+}
+
+#sticky-links .value:hover {
+  background: #62bb46;
+  color: #fff;
+  text-decoration: none;
+}
+
+#sticky-links .social.active {
+  background: #9e3d96;
+}
+
+#sticky-links .social .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -89px -55px no-repeat;
+  clear: both;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+#sticky-links .social.active .icon,
+#sticky-links .social:hover .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -116px -55px no-repeat;
+}
+
+#sticky-links .social:hover {
+  background: #9e3d96;
+  color: #fff;
+  text-decoration: none;
+}
+
+#sticky-links .top .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) right -35px no-repeat;
+  clear: both;
+  display: inline-block;
+  height: 13px;
+  width: 25px;
+}
+
+#sticky-links .top:hover {
+  background: #0072ce;
+  color: #fff;
+  text-decoration: none;
+}
+
+#sticky-links .top:hover .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) right -48px no-repeat;
+}
+/*----- sticky link end -----*/
+
+/*----- absolute banners begins */
+#absolute-banners {
+  display: none;
+  position: absolute;
+  right: -243px;
+  width: 200px;
+}
+
+.day-deal-banner {
+  background: #fff;
+  border: solid 1px #d6d6d6;
+  border-right: none;
+  box-shadow: 0 0 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 0 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 0 3px 0 #c2c2c2;
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.day-deal-banner .heading {
+  background: #f04937;
+  color: #fff;
+  font-size: 21px;
+  overflow: hidden;
+  padding: 16px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.day-deal-banner .deal-img {
+  overflow: hidden;
+  padding-top: 15px;
+}
+
+.day-deal-banner .deal-img img {
+  display: block;
+}
+
+.day-deal-banner .deal-details {
+  background: #f04937;
+  color: #fff;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+.day-deal-banner .deal-details .discount-box {
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.day-deal-banner .deal-details .discount-box .value {
+  display: inline-block;
+  float: none;
+}
+
+.day-deal-banner .deal-details .discount-box .percentage {
+  display: inline-block;
+  float: none;
+  font-size: 18px;
+}
+
+.day-deal-banner .deal-details .discount-box .percentage .off {
+  font-size: 18px;
+}
+
+.day-deal-banner .deal-details .title {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.day-deal-banner .deal-details a {
+  color: #fff;
+}
+
+.day-deal-banner .deal-details .text {
+  font-size: 10px;
+}
+
+.product-landing-top {
+top:57px;
+}
+/*----- absolute banners ends */
+
+/*----- main body begins -----*/
+#main-body-container {
+  clear: both;
+  float: left;
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+}
+
+#main-body-holder {
+  clear: both;
+  margin: 0 auto;
+  position: relative;
+  width: 948px;
+  z-index: 8;
+}
+
+#body-container {
+  float: left;
+  padding-left: 90px;
+  position: relative;
+  width: 858px;
+}
+
+#product-block,
+#value-block,
+#social-block {
+  float: left;
+  position: relative;
+}
+
+.row {
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.content-block {
+  background: #fff;
+  box-shadow: 0 0 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 0 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 0 3px 0 #c2c2c2;
+  float: left;
+  padding: 0 0 20px 50px;
+  position: relative;
+}
+
+.block-full {
+  float: left;
+  width: 808px;
+}
+
+.block-half {
+  float: left;
+  min-height: 350px;
+  width: 372px;
+}
+
+.content-block .title {
+  float: left;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.content-block .long-title {
+padding-bottom: 0px;
+margin-bottom: 20px;
+background: #00a9e0;
+color: #fff;
+float: left;
+height: 44px;
+line-height: 49px;
+text-align: center;
+width: 948px;
+font-size: 14px;
+margin-left: -20px;
+}
+
+.content-block .title h3 {
+  background: #00a9e0;
+  color: #fff;
+  float: left;
+  height: 44px;
+  line-height: 49px;
+  text-align: center;
+  width: 180px;
+}
+
+.content-block .title .subtitle {
+  float: left;
+  line-height: 44px;
+  margin-left: 20px;
+}
+
+.content-block .title .red-link-small {
+  float: right;
+  margin: 15px 25px 0 0;
+}
+
+#value-block .content-block .title h3 {
+  background: #62bb46;
+  color: #fff;
+}
+
+#social-block .content-block .title h3 {
+  background: #9e3d96;
+  color: #fff;
+}
+
+.content-block .title .subtitle {
+  color: #62bb46;
+}
+
+.product-banner {
+  float: left;
+  padding-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.product-banner .product-banner-content {
+  float: left;
+  width: 400px;
+}
+
+.product-banner .product-banner-image {
+  float: left;
+  height: 370px;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  width: 405px;
+}
+
+.product-banner  .box-title {
+  color: #00a9e0;
+  font: 130px 'louisiana';
+  font-weight: normal;
+  line-height: 50px;
+}
+
+.product-banner .banner-text {
+  color: #808080;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 60px 0 0 35px;
+}
+
+.product-banner .button-red {
+  margin: 20px 0 0 38px;
+}
+
+.border-sap {
+  border-top: solid 1px #cccccc;
+  box-shadow: 0 1px 2px 1px #e5e5e5;
+  -moz-box-shadow: 0 1px 2px 1px #e5e5e5;
+  -webkit-box-shadow: 0 1px 2px 1px #e5e5e5;
+  clear: both;
+  float: left;
+  height: auto;
+  left: -50px;
+  position: relative;
+  top: 6px;
+  width: 858px;
+}
+
+.content-block .product-columns {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.content-block .product-columns ul {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.content-block .product-columns li {
+  float: left;
+  margin-right: 15px;
+  width: 180px;
+}
+
+.content-block .product-columns dt {
+  float: left;
+  width: 100%;
+}
+
+.content-block .product-columns dd {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.content-block .product-columns .heading {
+  color: #00a9e0;
+}
+
+.content-block .product-columns p {
+  color: #808080;
+  margin: 10px 0;
+}
+
+.content-block .slider {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.content-block .slider.ui-slider-horizontal {
+  background: none;
+  height: auto;
+}
+
+.content-block .slider ul {
+  float: left;
+  overflow: hidden;
+}
+
+.content-block .slider li {
+  float: left;
+  margin-right: 15px;
+  width: 170px;
+}
+
+.content-block .slider dt {
+  display: table;
+  float: left;
+  height: 180px;
+  width: 100%;
+}
+
+.content-block .slider dt a {
+  display: table-cell;
+  height: 180px;
+  text-align: center;
+  vertical-align: middle;
+  width: 180px;
+}
+
+.content-block .slider dd {
+  float: left;
+  width: 100%;
+}
+
+.content-block .slider .heading {
+  text-align: center;
+}
+
+.content-block .slider .heading a {
+  font: 18px 'corisanderegular';
+}
+
+.content-block .slider li dt:hover + dd .heading a {
+  color: #003da5;
+}
+
+.content-block .slider .rating {
+  clear: both;
+  color: #808080;
+  font: 12px 'corisandebold';
+  margin-top: 3px;
+  text-align: center;
+  width: 100%;
+}
+
+.content-block .slider .rating a{
+  font: 12px 'corisandebold';
+  color: #808080;
+}
+
+.content-block .slider .rating a:hover{
+  color: #0072ce;
+}
+
+.content-block .slider .rating a:hover .star-gray{
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -205px -19px no-repeat;
+}
+
+.content-block .slider .price-row {
+  clear: both;
+  color: #f04937;
+  font: 12px 'corisandebold';
+  margin-top: 11px;
+  text-align: center;
+  width: 100%;
+}
+
+.content-block .slider .price-row .main-price {
+  font-size: 18px;
+}
+
+.content-block .slider .sub {
+  font-size: 10px;
+  position: relative;
+  top: -6px;
+}
+
+.content-block .slider .discount {
+  clear: both;
+  color: #808080;
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.content-block .slider .prev {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) 0 -155px no-repeat;
+  float: left;
+  height: 37px;
+  left: -30px;
+  margin-top: 100px;
+  position: absolute;
+  width: 21px;
+}
+
+.content-block .slider .next {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) -21px -155px no-repeat;
+  float: left;
+  height: 37px;
+  margin-top: 100px;
+  position: absolute;
+  right: 20px;
+  width: 21px;
+}
+
+.content-block .slider.small dt {
+  display: table;
+  float: left;
+  height: 120px;
+  padding: 0 30px;
+  width: 120px;
+}
+
+.content-block .slider.small dt a {
+  display: table-cell;
+  height: 120px;
+  text-align: center;
+  vertical-align: middle;
+  width: 120px;
+}
+
+.content-block .featured-block,
+.content-block .deal-block {
+  float: left;
+  width: 100%;
+}
+
+.content-block .featured-block .block-left {
+  float: left;
+  width: 190px;
+}
+
+.content-block .featured-block .block-left h2 {
+  color: #0078ac;
+  font: 45px 'corisandebold';
+  line-height: 45px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.content-block .featured-block .block-left .text {
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.content-block .featured-block .block-right {
+  float: right;
+  margin-right: 1px;
+  text-align: right;
+  width: 170px;
+}
+
+.content-block .featured-block .block-right img {
+  float: left;
+  max-height: 286px;
+  max-width: 170px;
+}
+
+.content-block .brand-block {
+  float: left;
+  width: 320px;
+}
+
+.content-block .brand-block .media-box {
+  float: left;
+  width: 100%;
+}
+
+.content-block .brand-block .text {
+  float: left;
+  line-height: 18px;
+  margin: 20px 0;
+}
+
+.blue-box h4 {
+  color: #fff;
+  font: 24px 'corisandebold';
+}
+
+.blue-box p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 20px 70px 20px 0;
+}
+
+.blue-box .title h3 {
+  background: #fff;
+  color: #00a9e0;
+}
+
+.deal-block .deal-left {
+  float: left;
+  width: 180px;
+}
+
+.deal-block .deal-left .discount-box {
+  color: #f04937;
+  float: left;
+  width: 100%;
+}
+
+.deal-block .deal-left .discount-box .value {
+  float: left;
+  font: 72px 'corisandebold';
+}
+
+.deal-block .deal-left .discount-box .percentage {
+  float: left;
+  font-size: 30px;
+  padding-top: 7px;
+}
+
+.deal-block .deal-left .discount-box .off {
+  float: left;
+  font: 26px 'corisandebold';
+}
+
+.deal-block .deal-right {
+  float: right;
+  width: 180px;
+}
+
+.deal-block .deal-left h2 {
+  color: #f04937;
+  display: inline-block;
+  line-height: 24px;
+  margin: 0 0 20px;
+  padding-right: 20px;
+}
+
+.deal-block .deal-left .text {
+  clear: both;
+  color: #7e7e7e;
+  float: left;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.anniversary-sale {
+  background: transparent url(http://www.vitaminshoppe.com/images/anniversary-bg.png) 0 0 no-repeat;
+}
+
+#value-block .anniversary-sale .title h3 {
+  background: #fff;
+  color: #62bb46;
+}
+
+.anniversary-sale .anniversary-block {
+  float: left;
+  width: 100%;
+}
+
+.anniversary-block .banner-bg {
+  background: transparent url(http://www.vitaminshoppe.com/images/anniversary-banner-bg.png) 0 0 no-repeat;
+  color: #f04937;
+  float: left;
+  height: 191px;
+  margin-left: 40px;
+  padding: 50px 0 0;
+  position: relative;
+  text-align: center;
+  width: 241px;
+}
+
+.anniversary-block .banner-bg .discount .value {
+  display: inline-block;
+  font: 110px 'corisandebold';
+  line-height: 70px;
+}
+.anniversary-block .banner-bg .discount .percentage {
+  display: inline-block;
+  font-size: 50px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.anniversary-block .banner-bg .discount .off {
+  display: inline-block;
+  font: 50px 'corisandebold';
+  text-align: left;
+}
+
+.anniversary-block .banner-bg .blue-text {
+  color: #1d479a;
+  font: 10px 'corisandebold';
+}
+
+.anniversary-block .banner-bg .blue-text strong {
+  font-size: 19px;
+}
+
+.anniversary-block .disclaimer {
+  filter: alpha(opacity=60);
+  opacity: .6;
+  color: #fff;
+  float: left;
+  margin: 0 0 0 -50px;
+  padding: 0 11px;
+  position: relative;
+  top: 15px;
+  width: 400px;
+}
+
+.content-block .awards-block {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.content-block .awards-block .awards-left {
+  float: left;
+  width: 450px;
+}
+
+.content-block .awards-block .awards-left .heading {
+  color: #62bb46;
+  font: 130px 'louisiana';
+  line-height: 100px;
+  margin-top: -30px;
+}
+
+.content-block .awards-block .awards-left .content {
+  font-size: 18px;
+  margin: 0 0 0 30px;
+}
+
+.content-block .awards-block .awards-left .content .text {
+  margin-bottom: 20px;
+}
+
+.content-block .awards-block .awards-right {
+  float: left;
+  margin-left:20px;
+  width: 330px;
+}
+
+.content-block .awards-block .awards-right .banner {
+  float: left;
+  margin-top: -30px;
+  width: 100%;
+}
+
+.content-block .awards-block .awards-right .award-points {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.content-block .awards-block .awards-right .award-points li {
+  color: #62bb46;
+  float: left;
+  line-height: 18px;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.content-block .friends-block,
+.content-block .charities-block {
+  float: left;
+  width: 100%;
+}
+
+.content-block .friends-block .img {
+  float: left;
+  margin-top: -20px;
+  width: 100%;
+}
+
+.content-block .friends-block .heading {
+  color: #9e3d96;
+  float: left;
+  font: 60px 'louisiana';
+  line-height: 50px;
+  width: 100%;
+}
+
+.content-block .friends-block .text,
+.content-block .charities-block .text {
+  float: left;
+  margin: 5px 40px 10px 0;
+}
+
+.content-block .charities-block .icons {
+  overflow: hidden;
+}
+
+.content-block .charities-block li {
+  float: left;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+#free-shipping {
+  margin: 0 90px 0 70px;
+  position: relative;
+}
+
+#free-shipping .delivery-icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -99px -293pxpx no-repeat;
+  float: left;
+  height: 19px;
+  left: -70px;
+  position: absolute;
+  top: 7px;
+  width: 60px;
+}
+
+#free-shipping .numbers {
+  margin: 24px 0 70px;
+}
+
+#social-block .social-section{
+  height: 438px;
+  width: 100%;
+}
+
+#social-block .social-links.content-block {
+  padding-bottom: 0;
+}
+
+#social-block .social-links .link-icons {
+  float: left;
+  position: relative;
+  left: 220px;
+  top: -32px;
+}
+
+#social-block .social-links .link-icons li {
+  float: left;
+  margin: 0 28px;
+}
+
+#social-block .social-links .social-icons {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-social.png) 0 0 no-repeat;
+  float: left;
+  height: 20px;
+  width: 21px;
+}
+
+#social-block .social-links .fb {
+  background-position: 0 0;
+}
+
+#social-block .social-links .fb:hover {
+  background-position: 0 -22px;
+}
+
+#social-block .social-links .twitter {
+  background-position: -21px 0;
+}
+
+#social-block .social-links .twitter:hover {
+  background-position: -21px -22px;
+}
+
+#social-block .social-links .gplus {
+  background-position: -42px 0;
+}
+
+#social-block .social-links .gplus:hover {
+  background-position: -42px -22px;
+}
+
+#social-block .social-links .instagram {
+  background-position: -63px 0;
+}
+
+#social-block .social-links .instagram:hover {
+  background-position: -63px -22px;
+}
+
+#social-block .social-links .pinterest {
+  background-position: -84px 0;
+}
+
+#social-block .social-links .pinterest:hover {
+  background-position: -84px -22px;
+}
+
+#social-block .social-links .youtube {
+  background-position: -105px 0;
+}
+
+#social-block .social-links .youtube:hover {
+  background-position: -105px -22px;
+}
+
+#social-block .social-links .foursquare {
+  background-position: -126px 0;
+}
+
+#social-block .social-links .foursquare:hover {
+  background-position: -126px -22px;
+}
+/*----- main body end -----*/
+
+/*----- footer begins -----*/
+footer {
+  background: #f2f2f2;
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 7;
+}
+
+footer #top-block {
+  background: #fff;
+  box-shadow: 0 0 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 0 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 0 3px 0 #c2c2c2;
+  overflow: hidden;
+  position: relative;
+}
+
+footer .wrapper-footer {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 0 60px;
+  width: 975px;
+}
+
+footer #top-block .site-links {
+  clear: both;
+  overflow: hidden;
+  padding-left: 20px;
+	padding-top: 55px;
+}
+
+footer #top-block li {
+  float: left;
+  margin-left: 15px;
+  width: 227px;
+}
+
+footer #top-block li:first-child {
+  margin-left: 0;
+}
+
+footer #top-block li h4,
+#top-block .awards-subscription-block h4 {
+  color: #0072ce;
+  margin-bottom: 20px;
+}
+
+footer #top-block li a {
+  color: #808080;
+  display: block;
+  font-family: 'corisanderegular';
+  line-height: 28px;
+}
+
+footer #top-block li a:hover {
+  color: #0072ce;
+  text-decoration: none;
+}
+
+#top-block .awards-subscription-block {
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+
+#top-block .payment-block-padding{
+  padding-top:25px;
+}
+
+#top-block .awards-subscription-block .awards-box {
+  float: right;
+  width: 450px;
+}
+
+#top-block .awards-subscription-block .awards-box .images a{
+float:left;
+}
+
+#top-block .awards-subscription-block .awards-box .award-links {
+  margin-left: 35px;
+}
+
+#top-block .awards-subscription-block .awards-box .award-links:first-child {
+  margin-left: 0;
+}
+
+#top-block .awards-subscription-block .subscription-block {
+  float: left;
+  margin-left: 20px;
+  width: 470px;
+}
+
+#top-block .awards-subscription-block .subscription-block .text {
+  float: left;
+  width: 100%;
+}
+
+#top-block .awards-subscription-block .subscription-block .subscription-form {
+  float: left;
+  margin-top:15px;
+  width: 100%;
+}
+
+#top-block .awards-subscription-block .subscription-block .subscription-form input[type='text'],
+#top-block .awards-subscription-block .subscription-block .subscription-form input[type='email'] {
+  border: solid 2px #e6e6e6;
+  color: #0072ce;
+  float: left;
+  font-size: 18px;
+  height: 36px;
+  padding: 4px 0 0 10px;
+  width: 210px;
+}
+
+#top-block .awards-subscription-block .subscription-block .subscription-form input.focused {
+  background: #fff;
+  border: solid 2px #f2a900;
+  color: #808080;
+  outline: none;
+}
+
+#top-block .awards-subscription-block .subscription-block .subscription-form input[type='submit'] {
+  background-position: right 15px;
+  border: none;
+  cursor: pointer;
+  height: 44px;
+  margin: 0 0 0 20px;
+  padding: 3px 40px 0 20px;
+}
+
+#top-block .awards-subscription-block .subscription-block .subscription-form .error-message {
+  color: #ff0000;
+  clear: both;
+  display: block;
+  position: relative;
+  top: 5px;
+}
+
+
+#top-block  .product-images img{
+float:left;
+padding-right: 10px;
+padding-top: 5px;
+}
+
+#top-block .questions-block {
+  border-bottom: solid 3px #f2f2f2;
+  float: left;
+  height: 44px;
+  padding: 18px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-chat-available .chat-unavailable-block{
+  display: none;
+}
+
+.footer-chat-unavailable .chat-available-block{
+  display: none;
+}
+
+#top-block .questions-block h4 {
+  color: #0072ce;
+  display: inline-block;
+}
+
+#top-block .questions-block .button-red {
+  background-position: right 16px;
+  float: none;
+  display: inline-block;
+  line-height: 20px;
+  margin-left: 6px;
+}
+
+#top-block .questions-block.footer-chat-unavailable h4{
+  position: relative;
+  top: 5px;
+  text-align: left;
+}
+
+#top-block .questions-block.footer-chat-unavailable .button-red{
+  position: relative;
+  margin-left: 23px;
+  top: -5px;
+}
+footer #disclaimer-block {
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+footer #disclaimer-block .text-left {
+  float: left;
+  font: 10px 'corisanderegular';
+  padding-left: 15px;
+  position: relative;
+  width: 465px;
+}
+
+footer #disclaimer-block .text-left .hint {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+footer #disclaimer-block .text-right {
+  float: right;
+  font: 10px 'corisanderegular';
+  width: 460px;
+}
+
+footer #disclaimer-block .text-right a {
+  font: 10px 'corisanderegular';
+}
+/*----- footer end -----*/
+
+/*----- layout and common classes begins -----*/
+body {
+  background: #f2f2f2;
+  line-height: 1;
+  min-width: 1000px;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+li,
+ol,
+p,
+ul {
+  border: 0;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html > body * {
+  outline: none;
+}
+
+body,
+div,
+input,
+table {
+  color: #808080;
+  font: 14px 'corisandelight', 'corisande', arial, verdana, tahoma;
+}
+.input-focus-active{
+  border-color: #f2a900 !important;
+  color: #0072ce !important;
+}
+input,
+select {
+  vertical-align: middle;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+
+sup,
+sub {
+  font-size: 10px;
+}
+
+sup {
+  vertical-align: text-top;
+  line-height: inherit;
+}
+
+.warning {
+  color: #f04937;
+}
+
+.corisande-light {
+  font-family: 'corisandelight'!important;
+}
+
+.corisande-regular {
+  font-family: 'corisanderegular';
+}
+
+.corisande-bold,
+.bold,
+b {
+  font-family: 'corisandebold';
+}
+
+.corisande-italic {
+  font-family: 'corisandeitalic';
+}
+
+.corisandelight-italic {
+  font-family: 'corisandelightitalic';
+}
+
+.corisandebold-italic {
+  font-family: 'corisandebolditalic';
+}
+
+.louisiana {
+  font-family: 'louisiana';
+}
+
+.corisande-bold18 {
+  font: 18px 'corisandebold';
+}
+
+.corisande-regular18 {
+  font: 18px 'corisanderegular';
+}
+
+.corisande-bold12 {
+  font: 12px 'corisandebold';
+}
+
+.size24 {
+  font-size: 24px;
+}
+
+.size18 {
+  font-size: 18px;
+}
+.pencilBannerTextSize{
+  font-size: .975em;
+}
+
+.size16 {
+  font-size: 16px;
+}
+
+.size14 {
+  font-size: 14px;
+}
+
+
+.size12 {
+  font-size: 12px;
+}
+
+.size10 {
+  font-size: 10px;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-orange {
+  color: #f58220!important;
+}
+
+.text-blue {
+  color: #0072ce;
+}
+
+.text-green {
+  color: #62bb46;
+}
+
+.text-red {
+  color: #f04937;
+}
+
+.text-gray {
+  color: #808080;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearall {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.line-height18 {
+  line-height: 18px;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.text-right {
+  text-align: right!important;
+}
+
+.blue-box {
+  background: #00a9e0;
+}
+
+.mtop5 {
+  margin-top: 5px;
+}
+
+.mtop7 {
+  margin-top: 7px;
+}
+
+.mtop8 {
+  margin-top: 8px!important;
+}
+
+.mtop10 {
+  margin-top: 10px;
+}
+
+.mtop12 {
+  margin-top: 12px;
+}
+
+.mtop15 {
+  margin-top: 15px;
+}
+
+.mtop20 {
+  margin-top: 20px;
+}
+
+.mtop25 {
+  margin-top: 25px;
+}
+
+.mtop30{
+  margin-top: 30px !important;
+}
+
+.mtop36 {
+  margin-top: 36px;
+}
+
+.mbottom5 {
+  margin-bottom: 5px;
+}
+
+.mbottom15 {
+  margin-bottom: 15px;
+}
+
+.mtop0{
+  margin-top: 0 !important;
+}
+
+.mleft0{
+  margin-left: 0 !important;
+}
+
+.mtop30{
+  margin-top: 30px !important;
+}
+
+.mbottom0{
+  margin-bottom: 0 !important;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.padding-top0{
+  padding-top: 0 !important;
+}
+
+.padding-bottom0{
+  padding-bottom: 0 !important;
+}
+
+.padding-bottom10{
+  padding-bottom: 10px !important;
+}
+
+.padding-top30{
+  padding-top: 30px !important;
+}
+
+.padding-top10 {
+  padding-top: 10px !important;
+}
+
+.padding-top15 {
+  padding-top: 15px !important;
+}
+
+.no-border {
+  border: none!important;
+}
+
+.valign-top {
+  vertical-align: top;
+}
+
+.price-row {
+  color: #f04937;
+  font: 18px 'corisandebold';
+}
+
+.price-row .sub {
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+}
+
+.price-row .discount {
+  clear: both;
+  color: #808080;
+  font: 12px 'corisandebold';
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.deal-block .deal-left .discount-box {
+  color: #f04937;
+  float: left;
+  width: 100%;
+}
+
+.discount-box .value {
+  float: left;
+  font: 48px 'corisandebold';
+}
+
+.discount-box .percentage {
+  float: left;
+  font-size: 30px;
+  padding-top: 7px;
+}
+
+.discount-box .off {
+  float: left;
+  font: 26px 'corisandebold';
+}
+
+.shadow {
+  box-shadow: 0 1px 2px 1px #c2c2c2;
+  -moz-box-shadow: 0 1px 2px 1px #c2c2c2;
+  -webkit-box-shadow: 0 1px 2px 1px #c2c2c2;
+  z-index: 10;
+}
+
+.white-bg {
+  background: #fff;
+}
+
+.grey-bg {
+  background: #f9f9f9;
+}
+
+.orange-bg {
+  background: #f58220!important;
+}
+
+.orange-bg-color {
+  background: #f58220!important;
+}
+
+.green-bg {
+  background: #62bb46!important;
+}
+
+.green-bg-color {
+  background-color: #62bb46!important;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+input[type="number"]{
+  color: #0072ce !important;
+}
+
+input[type="text"].selected,
+input[type="password"].selected,
+input[type="search"].selected,
+input[type="email"].selected,
+input[type="number"].selected{
+  color: #0072ce !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="button"],
+input[type="submit"],
+input[type="email"],
+input[type="number"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+
+fieldset.no-impact {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-container {
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.page-container h1 {
+  font: 48px 'corisandebold';
+  color: #00a9e0;
+  margin: 0 0 4px;
+}
+
+#breadcrumbs {
+  font-size: 13px;
+  color: #c4c3c3;
+  line-height: 17px;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 948px;
+}
+
+.breadcrumbs-block{
+width:948px;
+margin: 0 auto;  
+position: relative;
+}
+
+#breadcrumbs a {
+  font-size: 13px;
+  color: #808080;
+}
+
+#breadcrumbs a:hover {
+  color: #0072ce;
+}
+
+#breadcrumbs a,
+#breadcrumbs .text {
+  position: relative;
+  top: 2px;
+}
+
+#breadcrumbs .back {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) 0 -1523px no-repeat;
+  padding-left: 10px;
+}
+
+#breadcrumbs .back:hover {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) 0 -1581px no-repeat;
+}
+
+#breadcrumbs span {
+  color: #808080;
+  margin: 0 5px;
+  position: relative;
+  top: 1px;
+}
+
+#breadcrumbs .text {
+  color: #c4c3c3;
+  margin: 0;
+}
+
+/* v2 Start Rating Classes start */
+.star-ratings .rating-block{
+font-size: 12px; 
+margin: 5px 0;
+}
+.star-ratings .active{
+ font-weight: bold;
+ }
+ .star-ratings .stars-group {
+ line-height:16px; 
+ margin: 5px;
+ font-size: 12px;
+ }
+ 
+/* v2 Start Rating Classes end */
+.star-active {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -205px -19px no-repeat;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: 1px;
+  width: 12px;
+}
+
+.star-gray,  .content-block .slider .rating a.review-star:hover .star-gray{
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -218px -19px no-repeat;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: 1px;
+  width: 12px;
+}
+
+.star-active:last-child,
+.star-gray:last-child {
+  margin-right: 3px;
+}
+
+.star-active-medium {
+  background: transparent url(http://www.vitaminshoppe.com/images/rating/nst-medium-active.png) 0 0 no-repeat;
+  display: inline-block;
+  height: 18px;
+  position: relative;
+  top: 1px;
+  width: 18px;
+}
+
+.star-gray-medium {
+  background: transparent url(http://www.vitaminshoppe.com/images/rating/nst-medium-inactive.png) 0 0 no-repeat;
+  display: inline-block;
+  height: 18px;
+  position: relative;
+  top: 1px;
+  width: 18px;
+}
+
+.checkbox {
+  background: transparent url(http://www.vitaminshoppe.com/images/custom-checkboxes.png) 0 0 no-repeat;
+  float: left;
+  height: 12px;
+  width: 15px;
+}
+
+input[type='checkbox'].styled {
+  display: block!important;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+input[type='checkbox'].compare-checkbox {
+  opacity: 0;
+  position: relative;
+  top: -2px;
+  z-index: 9;
+}
+
+input[type='checkbox'].compare-checkbox + span:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  background: transparent url(http://www.vitaminshoppe.com/images/custom-checkboxes.png) 0 0 no-repeat;
+}
+
+input[type='checkbox'].compare-checkbox.white + span:before {
+  background: transparent url(http://www.vitaminshoppe.com/images/custom-checkboxes-white.png) 0 0 no-repeat;
+  height: 14px;
+  width: 16px;
+}
+
+input[type='checkbox']:checked.compare-checkbox.white + span:before {
+  background: transparent url(http://www.vitaminshoppe.com/images/custom-checkboxes-white.png) 0 -14px no-repeat;
+}
+
+.windows input[type='checkbox'].compare-checkbox + span:before {
+  top: 1px;
+}
+
+input[type='checkbox']:checked.compare-checkbox + span:before {
+  background-position: 0 -15px;
+}
+
+input[type='radio'].custom {
+  opacity: 0;
+  position: relative;
+  z-index: 9;
+}
+
+input[type='radio'].custom + span:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent url(http://www.vitaminshoppe.com/images/custom-radio.png) 0 0 no-repeat;
+}
+
+.windows input[type='radio'].custom + span:before {
+  top: 0;
+}
+
+input[type='radio']:checked.custom + span:before {
+  background-position: 0 -16px;
+}
+
+.bullet-points li {
+  line-height: 18px;
+  list-style: disc;
+  margin-left: 15px;
+}
+
+.bullet-points-inner li {
+  line-height: 18px;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.table-contents {
+  border: none;
+  border-collapse: collapse;
+  float: left;
+  width: 100%;
+}
+
+.table-contents th {
+  background: #e5e5e5;
+  border-left: solid 2px #fff;
+  font: 12px 'corisandebold';
+  height: 26px;
+  line-height: 2px;
+  padding-top: 3px;
+}
+
+.table-contents th:first-child {
+  border-left: none;
+}
+
+.table-contents td {
+  padding: 12px 0 10px 2px;
+}
+
+.table-contents td:first-child {
+  padding-left: 0;
+}
+
+.message-notification {
+  background: #808080;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 11px;
+  overflow: hidden;
+  padding: 22px 50px 18px 22px;
+  position: relative;
+}
+
+.message-notification .close {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -1px -136px no-repeat;
+  float: left;
+  height: 18px;
+  position: absolute;
+  right: 19px;
+  top: 21px;
+  width: 18px;
+}
+
+.message-notification .close:hover {
+  background-position: -154px -134px;
+}
+
+.message-notification a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.message-notification a:hover {
+  color: #e6e6e6;
+}
+/*----- layout and common classes end -----*/
+
+/*----- overlay and popup classes begins -----*/
+#popup-container {
+  display: none;
+}
+
+.overlay {
+  background: #fff;
+  filter: alpha(opacity=80);
+  opacity: .95;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.overlay-brand {
+  background: #fff;
+  filter: alpha(opacity=80);
+  opacity: .95;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.popupbox {
+  display: none;
+  position: fixed;
+  text-align: left;
+  top: 100px;
+  width: auto;
+  z-index: 100;
+}
+
+#popup-free-shipping {
+  background: #f2f2f2;
+  box-shadow: 0 0 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 0 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 0 3px 0 #c2c2c2;
+  color: #53565a;
+  left: 50%;
+  margin-left: -350px;
+  overflow: hidden;
+  padding: 40px 25px;
+  position: fixed;
+  top: 100px;
+  width: 700px;
+  z-index: 100;
+}
+#popup-disclaimer, #popup-healthy-awards {
+  background: #f2f2f2;
+  box-shadow: 0 0 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 0 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 0 3px 0 #c2c2c2;
+  color: #53565a;
+  left: 50%;
+  margin-left: -350px;
+  overflow: hidden;
+  padding: 40px 25px;
+  position: fixed;
+  top: 170px;
+  width: 500px;
+  z-index: 100;
+
+}
+.popupDisclaimer{
+color: #53565a;
+line-height: 20px;
+  font-family: arial;
+  font-size:11px;
+}
+
+.popupHealthyAwards{
+color: #53565a;
+line-height: 20px;
+  font-family: arial;
+  font-size:12px;
+}
+
+.popupbox .close {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -58px -29px no-repeat;
+  float: left;
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 18px;
+}
+.popupbox .close.outisde{
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -165px -56px no-repeat;
+  right: -18px;
+  top: -30px;
+  width: 19px;
+}
+
+.popupbox .close.outisde:hover{
+  background-position: -78px -29px;
+  right: -19px;
+}
+
+.popupbox .close:hover {
+  background-position: -78px -29px;
+}
+
+.popupbox h2 {
+  color: #f58220;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.popupbox h4 {
+  color: #53565a;
+}
+
+.popupbox .numbers li {
+  color: #53565a;
+  line-height: 18px;
+  list-style: decimal;
+  margin-left: 22px;
+}
+
+.popupbox .text {
+  color: #53565a;
+  line-height: 18px;
+}
+
+#popup-healthy-awards .popupHealthyAwards h4{
+font-size: 18px;
+color: #f58220;
+margin-bottom:14px;
+}
+
+#popup-healthy-awards .popupHealthyAwards span{
+margin-bottom:20px;
+}
+
+.popupHealthyAwards span h4 p{
+color: #53565a;
+font-weight:bold;
+font-size:14px;
+}
+
+#popup-healthy-awards .popupHealthyAwards a{
+font-size:12px;
+}
+
+.popupHealthyAwards .link-text{
+color: #53565a;
+margin-top:10px;
+font-size:12px;
+}
+
+#popup-free-shipping .head {
+	color: #f58220;
+	float: left;
+	font-size: 30px;
+	letter-spacing: -1px;
+	padding: 35px 0 30px;
+	width: 100%;
+}
+
+/*----- overlay and popup classes end -----*/
+
+/*----- links and buttons classes begins -----*/
+a {
+  font-size: 14px;
+  color: #0072ce;
+  text-decoration: none;
+}
+
+a:hover, a.gray-link:hover {
+  color: #003da5;
+  text-decoration: none;
+}
+
+a.gray-link {
+  color: #808080;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.button-red {
+  background: #f04937 url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right 15px no-repeat;
+  color: #fff;
+  float: left;
+  height: 30px;
+  line-height: 16px;
+  padding: 14px 40px 0 20px;
+}
+
+.button-red:hover {
+  background-color: #c53b2c;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-blue {
+  background: #00a9e0 url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right 16px no-repeat;
+  color: #fff;
+  float: left;
+  height: 30px;
+  padding: 14px 36px 0 20px;
+}
+
+.button-blue:hover {
+  background-color: #0072ce;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-dark-blue {
+  background: #0072ce url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right 16px no-repeat;
+  border: none;
+  color: #fff;
+  float: left;
+  height: 30px;
+  padding: 14px 40px 0 20px;
+}
+
+.button-dark-blue:hover {
+  background-color: #005eaa;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-orange {
+  background: #f58220 url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right 15px no-repeat;
+  color: #fff;
+  float: left;
+  height: 30px;
+  line-height: 16px;
+  padding: 14px 40px 0 20px;
+}
+
+.button-orange:hover {
+  background-color: #de6600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-grey {
+  background: #808080 url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right 15px no-repeat;
+  color: #fff;
+  float: left;
+  height: 30px;
+  line-height: 16px;
+  padding: 14px 40px 0 20px;
+}
+
+.submit-button-grey{
+  background: #808080 url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right 15px no-repeat;
+  color: #fff;
+  float: left;
+  height: 30px;
+  line-height: 16px;
+  padding: 14px 40px 0 20px;
+    text-decoration: none;
+}
+
+.button-cancel {
+  background: #808080;
+  color: #fff;
+  float: left;
+  height: 30px;
+  line-height: 19px;
+  padding: 14px 20px 0;
+}
+
+.button-grey:hover,
+.button-cancel:hover {
+  background-color: #595959;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-grey-light {
+  background: #f2f2f2;
+  color: #0072ce;
+  float: left;
+  font-family: 'corisanderegular';
+  height: 28px;
+  line-height: 19px;
+  padding: 12px 20px 0;
+}
+
+.button-green {
+  background: #62bb46 url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right 15px no-repeat;
+  color: #fff;
+  float: left;
+  height: 30px;
+  padding: 14px 40px 0 20px;
+}
+
+.button-green:hover {
+  background-color: #007a3e;
+  color: #fff;
+  text-decoration: none;
+}
+
+.red-link {
+  color: #f04937;
+}
+
+.red-link:hover {
+  color: #b83628;
+}
+
+.red-link-small {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -590px no-repeat;
+  color: #f04937;
+  padding-right: 10px;
+}
+
+.red-link-small:hover {
+  background-position: right -648px;
+  color: #b83628;
+}
+
+.windows .red-link-small {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -588px no-repeat;
+}
+
+.windows .red-link-small:hover {
+  background-position: right -646px;
+}
+
+.red-link-large {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -147px no-repeat;
+  color: #f04937;
+  padding-right: 15px;
+}
+
+.red-link-large:hover {
+  background-position: right -221px;
+  color: #b83628;
+}
+
+.white-link-large {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right 3px no-repeat;
+  color: #fff;
+  padding-right: 35px;
+}
+
+.white-link-large:hover {
+  background-position: right -71px;
+  color: #e5e5e5;
+  padding-right: 15px
+}
+
+.green-link {
+  color: #62bb46;
+  font: 12px 'corisandebold';
+}
+
+.green-link:hover {
+  color: #007a3e;
+}
+
+.red-link {
+  color: #f04937;
+}
+
+.red-link:hover {
+  color: #c41300;
+}
+
+.green-link-small {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -1697px no-repeat;
+  color: #62bb46;
+  font: 12px 'corisandebold';
+  padding-right: 10px;
+}
+
+.green-link-small:hover {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -1755px no-repeat;
+  color: #007a3e;
+}
+
+.windows .green-link-small {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -1695px no-repeat;
+}
+
+.windows .green-link-small:hover {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -1753px no-repeat;
+}
+
+.green-link-large {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -441px no-repeat;
+  color: #62bb46;
+  padding-right: 15px;
+}
+
+.green-link-large:hover {
+  background-position: right -515px;
+  color: #007a3e;
+}
+
+.purple-link-large {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -294px no-repeat;
+  color: #9e3d96;
+  padding-right: 15px;
+}
+
+.purple-link-large:hover {
+  background-position: right -368px;
+  color: #6f2789;
+}
+
+.gray-link-small, .gray-link-small-plus {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -822px no-repeat;
+  color: #808080;
+  padding-right: 10px;
+}
+
+.gray-link-small-plus {
+	background: transparent url(http://www.vitaminshoppe.com/images/sprite_PlusMark.png) right 3px no-repeat;
+	padding-right: 15px;
+}
+
+.gray-link-small-without-arrow {
+  color: #808080;
+  padding-right: 10px;
+}
+
+.gray-link-small:hover {
+  background-position: right -764px;
+  color: #0072ce;
+}
+
+.gray-link-small-plus:hover {
+	background: transparent url(http://www.vitaminshoppe.com/images/sprite_PlusMark.png) right -13px no-repeat;
+  color: #0072ce;	
+}
+
+.windows .gray-link-small {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -820px no-repeat;
+}
+
+.windows .gray-link-small:hover {
+  background-position: right -762px;
+}
+
+.backto-top {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) right -878px no-repeat;
+  color: #0072ce;
+  float: right;
+  margin-top: 20px;
+  padding-right: 13px;
+}
+
+.backto-top:hover {
+  background-position: right -932px;
+  color: #003da5;
+}
+
+.see-all-link {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) 40px -1062px no-repeat;
+  color: #808080;
+  display: inline-block;
+  font: 12px 'corisandebold';
+}
+
+.see-all-link:hover {
+  background-position: 40px -1118px;
+  color: #0072ce;
+}
+
+.windows .see-all-link {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) 40px -1060px no-repeat;
+}
+
+.windows .see-all-link:hover {
+  background-position: 40px -1116px;
+}
+
+.see-less-link {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) 48px -1172px no-repeat;
+  color: #808080;
+  display: inline-block;
+  font: 12px 'corisandebold';
+}
+
+.see-less-link:hover {
+  background-position: 48px -1227px;
+  color: #0072ce;
+}
+
+.windows .see-less-link {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-arrows.png) 48px -1170px no-repeat;
+}
+
+.windows .see-less-link:hover {
+  background-position: 48px -1225px;
+}
+/*----- links and buttons classes end -----*/
+
+/*-- custom select menu list --*/
+.custom-select-toggle{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 147px;
+}
+.custom-select-toggle-page{
+  width: 60px;
+  margin-right:5px;
+  padding: 5px 0 5px 20px;
+  margin-top:35px;
+}
+
+.custom-select-toggle.hidden {
+  display: none;
+}
+
+.custom-select-toggle .select-toggle-button{
+  background: #f2f2f2;
+  display: block;
+  height: 36px;
+  line-height: 38px;
+  border: solid 2px #f2f2f2;
+}
+
+.custom-select-toggle .select-toggle-button.pagination-disabled{
+opacity:0.4;
+cursor:default;
+}
+
+.custom-select-toggle.activate-toggle .select-toggle-button{
+  background: #fff;
+  border: solid 2px #f2a900;
+  color: #0973c7;
+}
+
+.custom-select-toggle.paypal-error .select-toggle-button {
+  background: #f2f2f2!important;
+  border: solid 2px #f04937!important;
+  color: #0973c7;
+}
+
+.custom-select-toggle .select-toggle-button .select-toggle-text{
+  color: #0973c7;
+  float: left;
+  font-family: 'corisandebold';
+  letter-spacing: -1px;
+  max-width: 109px;
+  overflow: hidden;
+  text-indent: 6px;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+.custom-select-toggle a.select-toggle-button i{
+  background: transparent url(http://www.vitaminshoppe.com/images/dropdown-arrow.png) 0 center no-repeat;
+  height: 100%;
+  position: absolute;
+  right: 8px;
+  top: 0px;
+  width: 15px;
+}
+.custom-select-toggle .custom-select-list{
+  background: #fff;
+  border: solid 1px #cecece;
+  border-top: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 2px 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 2px 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 2px 3px 0 #c2c2c2;
+  position: absolute;
+  padding: 2px 0;
+  top: auto;
+  width: 147px;
+  z-index: 9;
+}
+.custom-select-toggle .custom-select-list-page-width{
+   width: 60px;
+}
+
+.custom-select-toggle .custom-select-list *{
+  font-family: 'corisanderegular';
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  outline: none;
+  white-space: nowrap;
+}
+.custom-select-toggle .custom-select-list li a{
+  color: #808080;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  margin: 0 2px;
+}
+.custom-select-toggle .custom-select-list li a span{
+  text-indent:10px;
+  display: block;
+}
+.custom-select-toggle .custom-select-list li:hover a{
+  background: #ffd400;
+}
+
+
+.custom-select-toggle.full {
+  width: 100% !important;
+}
+
+.custom-select-toggle.full .select-toggle-button .select-toggle-text {
+  max-width: inherit;
+  min-width: inherit !important;
+  padding-right: 25px;
+  width: auto;
+}
+
+.custom-select-toggle.full .custom-select-list {
+  width: 100% !important;
+}
+
+/*----- responsive classes begins -----*/
+.img-responsive {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/*@media (-webkit-min-device-pixel-ratio: 1.5),
+(min--moz-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3 / 2),
+(min-device-pixel-ratio: 1.5) {
+  #search input[type='button'] {
+    background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons@2x.png) 0 -272px no-repeat;
+    -webkit-background-size: 460px 220px;
+    -moz-background-size: 460px 220px;
+    -o-background-size: 460px 220px;
+    background-size: 460px 220px;
+  }
+
+  #utility-nav .header-icons {
+    background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons@2x.png) 0 0 no-repeat;
+  }
+
+  #utility-nav .icon-help {
+    background-position: 0 0;
+    -webkit-background-size: 460px 220px;
+    -moz-background-size: 460px 220px;
+    -o-background-size: 460px 220px;
+    background-size: 460px 220px;
+  }
+}*/
+/*----- responsive classes end -----*/
+
+/*------ glossary page css begins -----*/
+.glossary-top-block {
+  float: left;
+  width: 100%;
+}
+
+.glossary-title-description {
+  color: #808080;
+  line-height: 18px;
+  margin-bottom: 30px;
+  width: 620px;
+}
+
+.glossary-nav {
+  background: #e5e5e5;
+  float: left;
+  margin-left: -2px;
+  padding: 5px 40px;
+  width: 872px;
+  z-index: 10;
+}
+.glossary-nav a{
+background: #d0d0d0;
+  color: #808080;
+}
+.glossary-nav a,
+.glossary-nav a.unselected.active {
+  float: left;
+  height: 40px;
+  line-height: 43px;
+  margin-left: 2px;
+  text-align: center;
+  width: 30px;
+}
+
+.glossary-nav a:hover {
+  background: #f2f2f2;
+  color: #0072ce;
+}
+
+.glossary-nav a.active,
+.glossary-nav a.unselected.active {
+  background: #f2f2f2;
+  color: #0072ce;
+}
+
+.glossary-nav .deactive,
+.glossary-nav .deactive.unselected {
+  background: #e5e5e5;
+  color: #b7b7b7;
+}
+
+.glossary-nav .deactive:hover {
+  background: #e5e5e5;
+  color: #b7b7b7;
+  cursor: default;
+}
+
+.page-container .row {
+  margin: 20px 0 0;
+}
+
+.page-container.glossary-brand-listing .row {
+  margin: 23px 0 0;
+}
+
+.page-container .content-block {
+  padding: 25px 160px 20px;
+  width: 628px;
+}
+
+.page-container .content-block .glossary-head {
+  background: #00a9e0;
+  color: #fff;
+  height: 44px;
+  left: 45px;
+  line-height: 45px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 55px;
+}
+
+.page-container .content-block .glossary-terms {
+  float: left;
+  width: 100%;
+}
+
+.glossary-terms .glossary-term {
+  float: left;
+  line-height: 24px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.glossary-terms h3 {
+  font-size: 24px;
+}
+
+.glossary-terms a {
+  font-size: 18px;
+  color: #808080;
+}
+
+.glossary-terms p a {
+  font-family: 'corisandebold';
+}
+
+.glossary-terms a:hover {
+  color: #0072ce;
+}
+
+.glossary-terms .glossary-term.browse-brand {
+  line-height: 20px;
+}
+
+.glossary-term.browse-brand .brand-listing {
+  float: left;
+  width: 50%;
+}
+
+.glossary-term.browse-brand .brand-listing li {
+  float: left;
+  padding-right: 14px;
+  width: 290px;
+}
+
+.glossary-term.browse-brand .brand-listing li:first-child {
+  width: 310px;
+}
+
+.glossary-term.browse-brand  a {
+  display: block;
+}
+
+.glossary-terms .see-link, .glossary-terms .gray-link-small {
+  font-size: 14px;
+}
+
+.glossary-terms .backto-top {
+  font-size: 14px;
+  color: #0072ce;
+}
+
+.glossary-terms .backto-top:hover {
+  color: #003da5;
+}
+/*------ glossary page css end -----*/
+
+/* to be removed */
+.pin-wrapper {
+  float:left !important;
+}
+
+.heightfix {
+  height:0px;
+  overflow:hidden;
+}
+
+
+/*----- iPad css begins -----*/
+.iPad #utility-nav .links-block:hover .utility-links{
+  color: #0173ce;
+}
+
+.iPad #utility-nav .links-block:hover .utility-links .icon-login{
+  background-position: -110px 0;
+}
+
+.iPad #utility-nav .links-block:hover .utility-links .icon-help{
+  background-position: 0 0;
+}
+
+.iPad #utility-nav .links-block:hover .utility-links .icon-call{
+  background-position: -17px 0;
+}
+
+.iPad #utility-nav .links-block:hover .utility-links .icon-chat {
+  background-position: -161px 0;
+}
+
+.iPad #utility-nav .links-block.available:hover .icon-chat{
+  background-position: -39px 0;
+}
+
+.iPad #utility-nav .links-block:hover .utility-links .icon-store{
+  background-position: -65px 0;
+}
+
+.iPad #utility-nav .links-block:hover .utility-links .icon-cart{
+  background-position: -85px 0;
+}
+
+.iPad #utility-nav .links-block.hover-effect .utility-links, .iPad #utility-nav .links-block .utility-links.my-account{
+  color: #f2a900;
+}
+
+.iPad #utility-nav .links-block .utility-links.my-account .icon-login{
+  background-position: -110px -81px;
+}
+
+.iPad #utility-nav .links-block.hover-effect .utility-links .icon-help{
+  background-position: 0px -81px;
+}
+
+.iPad #utility-nav .links-block.hover-effect .utility-links .icon-call{
+  background-position: -17px -81px;
+}
+
+.iPad #utility-nav .links-block.hover-effect .utility-links .icon-chat {
+  background-position: -136px -81px;
+}
+
+.iPad #utility-nav .links-block.available.hover-effect .utility-links .icon-chat {
+  background-position: -39px -81px;
+}
+
+.iPad #utility-nav .links-block.hover-effect .utility-links .icon-store{
+  background-position: -65px -81px;
+}
+
+.iPad #utility-nav .links-block.hover-effect .utility-links .icon-cart{
+  background-position: -85px -81px;
+}
+
+.iPad #secondary-nav .category-filter:hover .first-level {
+  display: none;
+}
+
+.iPad #secondary-nav .filters .category-reorder:hover .reorder-block {
+  display: none;
+}
+
+.iPad #sticky-links .top:hover {
+  background: #e6e6e6;
+  color: #b2b2b2;
+  text-decoration: none;
+}
+
+.iPad #sticky-links .top:hover .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) right -35px no-repeat;
+}
+
+.iPad #sticky-links .top.top-touch {
+  background: #0072ce;
+  color: #fff;
+  text-decoration: none;
+}
+
+.iPad #sticky-links .top.top-block .icon {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) right -48px no-repeat;
+}
+
+.iPad #nav-inner > li:hover + li .primary {
+  background: transparent url(http://www.vitaminshoppe.com/images/nav-sap.png) 0 0 no-repeat;
+}
+
+.iPad #nav-inner li:hover .primary {
+  background: transparent url(http://www.vitaminshoppe.com/images/nav-sap.png) 0 0 no-repeat;
+  text-decoration: none;
+}
+
+.iPad #nav-inner > li.hover-effect + li .primary {
+  background: transparent url(http://www.vitaminshoppe.com/images/nav-sap.png) 0 bottom no-repeat;
+}
+
+.iPad #nav-inner li.hover-effect .primary {
+  background: #338dd8 url(http://www.vitaminshoppe.com/images/nav-sap.png) 0 0 no-repeat;
+  text-decoration: none;
+}
+
+.iPad #utility-nav .links-block .utility-sub-menu {
+  display: none;
+}
+
+.iPad #utility-nav .links-block.user-link-block{
+  max-width: 47px;
+}
+
+.iPad .ipad-none {
+  display: none!important;
+}
+
+.iPad .main-header.fixed .header-show {
+  display: block !important;
+}
+
+.iPad #nav-inner li .sub-menu {
+  padding: 0 0 30px 40px;
+  max-width: auto;
+}
+
+.iPad #nav-inner li .sub-menu.right {
+  right: 5px!important;
+}
+
+.iPad #nav-inner li li {
+  background: none;
+  float: left;
+  margin: 30px 0px 0 0px;
+  padding-right: 40px;
+  max-width: 166px;
+  width: auto;
+}
+
+.iPad #utility-nav .links-block .cart-block {
+  right: -24px;
+}
+
+.iPad #utility-nav .links-block .cart-block .arrow-top {
+  left: 270px;
+}
+
+.iPad #body-container {
+  margin-left: -10px;
+}
+
+.iPad .main-header.fixed .header-show,
+.iPad .main-header.fixed .header-hide {
+  margin-left: -13px;
+}
+
+.iPad #secondary-nav .wrapper:after {
+  background: #fff;
+  bottom: -1px;
+  content: " ";
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.iPad #login-bar .login-wrapper {
+  padding: 20px 20px 20px 0;
+  width: 980px;
+}
+
+
+.iPad .main-header.expended #secondary-nav .wrapper:before, .iPad .glossary-nav.fix-glossary a:first-child:before{
+  background: #e5e5e5;
+  bottom: -1px;
+  content: " ";
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.iPad .main-header.expended #secondary-nav .wrapper:before{
+  background: #f2f2f2;
+  height:2px;
+}
+
+.iPad #utility-nav .links-block .chat-available,
+.iPad #utility-nav .links-block .chat-unavailable {
+  left: 50%;
+  margin-left: -172px;
+  width: 320px;
+}
+
+.iPad #utility-nav .links-block .chat-available .arrow-top,
+.iPad #utility-nav .links-block .chat-unavailable .arrow-top {
+  margin-left: -5px;
+}
+
+.iPad #popup-free-shipping{
+  position: absolute;
+}
+/*----- iPad css end -----*/
+
+/*----- custom form css begins -----*/
+.select-sort {
+  float: left;
+  position: relative;
+}
+
+.select-sort .select {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) right -288px no-repeat;
+  float: left;
+  font: 14px 'corisandebold';
+  color: #0072ce;
+  height: 40px;
+  line-height: 43px;
+  padding: 0 26px 0 9px;
+  width: auto;
+}
+
+.select-sort .styled {
+  height: 40px;
+  left: 0;
+  top: 0;
+  width: auto;
+}
+
+input[type='radio'].custom + span:before {
+  background: transparent url(http://www.vitaminshoppe.com/images/custom-radio.png) 0 0 no-repeat;
+  left: -2px;
+  top: -2px;
+}
+
+input[type='radio']:checked.custom + span:before {
+  background-position: 0 -16px;
+}
+/*----- custom form css end -----*/
+
+/*----- pagination css begins -----*/
+.pagination {
+ /* border-left: solid 2px #f2f2f2;*/
+  float: left;
+  /*height: 40px;*/
+  padding: 5px 0 5px 20px;
+ /* width: 327px;*/
+ text-align:center;
+ width:41%;
+}
+.paginationPageText {
+line-height:48px;
+margin-top:48px;
+}
+
+.pagination .pagination-links {
+ display:inline-block;
+}
+
+.pagination .pagination-links .nav-disabled {
+opacity:0.35;
+cursor:default;
+}
+
+.pagination a {
+  background: #d0d0d0;
+  color: #808080;
+  float: left;
+  font-family: 'corisandebold';
+  height: 40px;
+  line-height: 43px;
+  margin-left: 4px;
+  text-align: center;
+  width: 40px;
+}
+
+.pagination .active,
+.pagination a:hover {
+  background: #f2f2f2;
+  color: #0071ce;
+}
+
+.pagination .active {
+  cursor: default;
+}
+
+.pagination .prev,
+.pagination .prev:hover,
+.pagination .next {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) -158px -165px no-repeat;
+  height: 14px;
+  margin: 13px 5px 0 0;
+  padding: 0;
+  width: 9px;
+}
+.pagination .next,
+.pagination .next:hover {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-main.png) -168px -165px no-repeat;
+  margin: 13px 0 0 9px;
+}
+/*----- pagination css end -----*/
+
+/*----- navigator css begins -----*/
+.template-links {
+  float: left;
+  width: 100%;
+}
+
+.template-links h3 {
+  font: 18px 'corisandebold';
+  margin-top: 30px;
+}
+
+.template-links .bullet-points {
+  margin-top: 10px;
+}
+
+.template-links .bullet-points li {
+  margin-top: 5px;
+}
+/*----- navigator css end -----*/
+
+/*----- store locator popup css begins -----*/
+.store-location-box {
+  background: #fff;
+  top: -254px;
+  display: none;
+  float: left;
+  padding: 30px 22px 36px;
+  position: absolute;
+  right: -70px;
+  width: 328px;
+}
+
+.windows .block-content .ship-row .store-location-box {
+  top: -266px;
+}
+
+.store-location-box .close-button {
+  position: relative;
+}
+
+.store-location-box .close-button .close {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -165px -56px no-repeat;
+  float: left;
+  height: 18px;
+  position: absolute;
+  right: -12px;
+  top: -20px;
+  width: 19px;
+}
+
+.store-location-box .close-button .close:hover {
+  background-position: -77px -29px;
+}
+
+.store-location-box .content-box {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.store-location-box .content-box .map {
+  float: left;
+  width: 140px;
+}
+
+.store-location-box .content-box .map img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.store-location-box .content-box .address {
+  float: right;
+  line-height: 14px;
+  padding-top: 1px;
+  text-align: left;
+  width: 168px;
+}
+
+.store-location-box .content-box .address .gray-link-small {
+  background-position: right -821px!important;
+  font: 14px 'corisandebold'!important;
+  margin: 0!important;
+}
+
+.store-location-box .content-box .address .gray-link-small:hover {
+  background-position: right -763px!important;
+}
+
+.store-location-box .location-arrow {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.store-location-box .location-arrow .arrow {
+  bottom: -53px;
+  background: transparent url(http://www.vitaminshoppe.com/images/location-down-arrow.png) 0 0 no-repeat;
+  float: left;
+  height: 17px;
+  position: absolute;
+  right: 78px;
+  width: 29px;
+}
+
+.iPad .store-location-box .location-arrow .arrow {
+  bottom: -52px;
+}
+/*----- store locator popup css end -----*/
+
+/*----- email popup classes begins -----*/
+#email-popup,
+#choose-store-location {
+  background: #f2f2f2;
+  box-shadow: 0 0 3px 0 #c2c2c2;
+  -moz-box-shadow: 0 0 3px 0 #c2c2c2;
+  -webkit-box-shadow: 0 0 3px 0 #c2c2c2;
+  color: #53565a;
+  left: 50%;
+  margin-left: -376px;
+  padding: 40px 18px 18px;
+  position: absolute;
+  top: 60px;
+  width: 716px;
+  z-index: 100;
+}
+
+#email-popup.popupbox .close,
+#choose-store-location.popupbox .close {
+  background: transparent url(http://www.vitaminshoppe.com/images/sprite-icons.png) -165px -56px no-repeat;
+  right: -18px;
+  top: -30px;
+  width: 19px;
+}
+
+#email-popup.popupbox .close:hover,
+#choose-store-location.popupbox .close:hover {
+  background-position: -78px -29px;
+  right: -19px;
+}
+
+#popup-container .popup-data,
+#choose-store-location .popup-data {
+  float: left;
+  width: 100%;
+}
+
+#email-popup .head,
+#choose-store-location .head {
+  color: #0072ce;
+  float: left;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+#email-popup .product-block,
+#choose-store-location .product-block {
+  background: #fff;
+  float: left;
+  margin-top: 35px;
+  padding: 18px;
+  position: relative;
+  width: 680px;
+}
+
+#choose-store-location {
+  padding-bottom: 16px;
+  padding-top: 41px;
+}
+
+#choose-store-location .product-block {
+  margin-top: 34px;
+  padding-bottom: 14px;
+}
+
+#email-popup .product-block {
+  padding: 17px 18px;
+}
+
+#email-popup .product-block .image,
+#choose-store-location .product-block .image {
+  float: left;
+  text-align: center;
+  width: 90px;
+}
+
+#email-popup .product-block .image img,
+#choose-store-location .product-block .image img {
+  vertical-align: top;
+}
+
+#choose-store-location .product-block .image img {
+  cursor: pointer;
+}
+
+#email-popup .product-block .prod-detail,
+#choose-store-location .product-block .prod-detail {
+  float: left;
+  padding-left: 20px;
+  width: 560px;
+}
+
+#email-popup .product-block .prod-detail {
+  padding-top: 4px;
+}
+
+#email-popup .product-block .prod-detail .brand,
+#email-popup .product-block .prod-detail .quantity,
+#email-popup .product-block .prod-detail .flavor,
+#choose-store-location .product-block .prod-detail .brand,
+#choose-store-location .product-block .prod-detail .quantity {
+  font: 12px 'corisanderegular';
+}
+
+#email-popup .product-block .prod-detail .title,
+#choose-store-location .product-block .prod-detail .title {
+  font: 18px 'corisanderegular';
+  margin-top: 10px;
+}
+
+#choose-store-location .product-block .prod-detail .title {
+  cursor: pointer;
+  line-height: 19px;
+}
+
+#choose-store-location .product-block .prod-detail .title:hover {
+  color: #003da5;
+}
+
+#email-popup .product-block .prod-detail .quantity,
+#choose-store-location .product-block .prod-detail .quantity,
+#choose-store-location .product-block .prod-detail .rating-bar {
+  margin-top: 8px;
+}
+
+#email-popup .product-block .prod-detail .flavor {
+  margin-top: 3px;
+}
+
+#choose-store-location .product-block .prod-detail .quantity .flavor {
+  margin-left: 15px;
+}
+
+#email-popup .form-block {
+  float: left;
+  padding: 0 50px 0 62px;
+  width: 596px;
+}
+
+#email-popup .form-block dl {
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#email-popup .form-block dt {
+  float: left;
+  font-family: 'corisandebold';
+  line-height: 40px;
+  width: 123px;
+}
+
+#email-popup .form-block dd {
+  float: left;
+  position: relative;
+  width: 437px;
+}
+
+#email-popup .form-block .hint {
+  left: 0;
+  position: absolute;
+  bottom: -15px;
+}
+
+#email-popup .form-block dd input[type="text"],
+#email-popup .form-block dd input[type="email"] {
+  background: #fff;
+  border: none;
+  color: #0072ce;
+  font: 16px 'corisanderegular';
+  height: 40px;
+  padding: 3px 7px 0;
+  width: 457px;
+}
+
+#email-popup .form-block dd input[type="text"].input-focus,
+#email-popup .form-block dd input[type="email"].input-focus {
+  border: solid 2px #fff;
+  color: #808080 !important;
+  height: 36px;
+  padding: 3px 5px 0;
+}
+
+#email-popup .form-block dd input[type="text"].input-focus.invalid,
+#email-popup .form-block dd input[type="email"].input-focus.invalid,
+#email-popup .form-block dd input[type="text"].input-focus.invalid.input-focus-active,
+#email-popup .form-block dd input[type="email"].input-focus.invalid.input-focus-active {
+  border: solid 1px #f04937!important;
+  height: 38px;
+  padding: 3px 6px 0;
+}
+
+#email-popup .form-block dd input[type="text"].input-focus.input-focus-active,
+#email-popup .form-block dd input[type="email"].input-focus.input-focus-active,
+#email-popup .form-block dd input[type="text"].input-focus.field-active,
+#email-popup .form-block dd input[type="email"].input-focus.field-active {
+  color: #0072ce !important;
+}
+
+#email-popup .form-block dd textarea {
+  background: #fff;
+  border: solid 2px #fff;
+  color: #0072ce;
+  font: 16px 'corisanderegular';
+  height: 102px;
+  padding: 7px 5px;
+  width: 457px;
+}
+
+#email-popup .form-block .verification .captcha-box {
+  float: left;
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+#email-popup .form-block .links a,
+#email-popup .form-block .links input[type="submit"] {
+  float: right;
+  font: 18px 'corisanderegular';
+  margin-left: 20px;
+}
+
+#email-popup .form-block .links input[type="submit"] {
+  height: 44px;
+  padding: 4px 20px 0;
+}
+
+#email-popup .form-block .links .button-dark-blue {
+  background-image: none;
+  padding-right: 20px;
+}
+
+#email-popup .form-block .links .button-cancel {
+  padding: 14px 12px 0;
+}
+/*----- email popup classes end -----*/
+
+.forgot-link{
+padding-bottom:10px;
+}
+
+.error-master {
+	color: #f04937;
+	float: left;
+	font: 18px 'corisanderegular';
+	margin: 2px 0 14px;
+	width: 100%;
+}
+
+#utility-nav .links-block.user-link-block .margin-top{
+margin-top:12px;
+}
+
+.width100{
+width:100%;
+}
+
+/* customer care info across site */
+.text.chat-active {
+	width: 270px !important;
+	line-height: 23px !important;
+	height: 80px;
+	margin-bottom: 0 !important;
+}
+
+.contact-boxes .contact-box .text.chat-active {
+	height: 90px;
+}
+
+#top-block .questions-block.footer-chat-unavailable {
+	height: 0;
+}
+
+/* Sitewide RR changes */
+
+.product-landing .related-views.vertical .content-block .title{
+  width: 180px !important;
+  margin-left: 0 !important;
+}
+
+li.rr-item {
+  float: left;
+  text-align: center;
+  width: 180px;
+  margin-left: 62px;
+}
+
+li.rr-item:nth-of-type(1), .related-views.vertical li.rr-item {
+  margin-left: 0;
+}
+
+li.rr-item dt {
+  height: 180px;
+  display: table;
+  width: 100%;
+}
+
+li.rr-item dt a {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+li.rr-item dd {
+  min-height: 110px;
+}
+
+#product-description-block .column-right .row.vertical.related-views {
+  margin-bottom: 0; 
+}
+
+.vertical li.rr-item dd {
+  min-height: 0;
+  margin-bottom: 10px;
+}
+
+li.rr-item .heading a {
+  font: 18px 'corisanderegular'; 
+}
+
+li.rr-item .price-row {
+  margin-top: 11px;
+}

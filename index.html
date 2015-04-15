@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Grand Opening Generator</title>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900italic' rel='stylesheet' type='text/css'>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: #000 url(maxresdefault.jpg) center top no-repeat;
+      text-align: center;
+      font-family: arial, helvetica, sans-serif;
+      color: #666;
+    }
+    
+    #container {
+      width: 960px;
+      min-height: 150px;
+      margin: 0 auto;
+      text-align: left;
+      background-color: rgba(255, 255, 255, .85);
+      display: inline-block;
+    }
+    
+    h1,
+    h2,
+    h3,
+    input[type="submit"] {
+      font-family: 'Alegreya Sans SC', sans-serif;
+    }
+    
+    h1 {
+      font-size: 75px;
+      padding: 30px 30px;
+      color: #005892;
+      margin: 0;
+    }
+    
+    h3 {
+      border-bottom: 1px solid #666;
+      display: block;
+      clear: both;
+    }
+    
+    #formContainer {
+      margin: 0 30px 30px 30px;
+      background-color: #fff;
+      padding: 25px;
+      float: left;
+      width: 900px;
+    }
+    
+    span.subhead {
+      font-weight: bold;
+      color: #000;
+      display: block;
+      margin: 15px 0;
+    }
+    
+    input[type="submit"] {
+      color: #fff;
+      font-size: 20px;
+      background-color: rgb(240, 73, 55);
+      border: none;
+      padding: 5px 10px;
+      margin-right: 25px;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: rgb(255, 88, 70);
+    }
+    
+    .half {
+      width: 50%;
+      margin-bottom: 20px;
+      float: left;
+    }
+    
+    label {
+      display: block;
+      margin: 5px 0;
+      font-weight: bold;
+    }
+    
+    label.inline {
+      display: inline;
+    }
+    
+    .half input[type="text"] {
+      width: 90%;
+      padding: 5px 10px;
+      margin-bottom: 15px;
+    }
+    
+    .half input[type="text"].not-wide {
+      width: 40%;
+    }
+    
+    .bogo-fields {
+      display: none;
+    }
+    
+    #errors {
+      color: #c00;
+    }
+  </style>
+  <link type="text/css" rel="stylesheet" href="jquery-ui.min.css" />
+  <link type="text/css" rel="stylesheet" href="jquery-ui.theme.min.css" />
+  <link type="text/css" rel="stylesheet" href="jquery-ui.structure.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Store Grand Opening<br />Code Generator</h1>
+
+    <div id="formContainer">
+      <h2>Provide all the following info to generate code:</h2>
+
+      <ul id="errors"></ul>
+
+      <form action="generator.php" method="post" id="generatorForm">
+        <h3>Supply Variables</h3>
+
+        <div class="half">
+          <label>Location</label>
+          <input type="text" name="location" id="location" />
+          <label><em>Share the Health</em> Date</label>
+          <input type="text" name="sthdate" id="sthdate" class="datepicker" readonly='true' />
+          <label><em>Share the Health</em> Time</label>
+          <input type="text" name="sthtime" id="sthtime" />
+          <label class="bogo-fields">BOGO End Date</label>
+          <input class="bogo-fields datepicker" type="text" name="bogoEndDate" id="bogoEndDate" readonly='true' />
+        </div>
+
+        <div class="half">
+          <label>Coupon Code</label>
+          <input type="text" name="couponCode" id="couponCode" />
+          <label>Coupon Expiration Date</label>
+          <input type="text" name="couponExpiration" id="couponExpiration" class="datepicker" readonly='true' />
+        </div>
+
+
+        <h3>Select Options</h3>
+
+        <div class="half">
+          <span class="subhead">BOGO</span>
+          <label>
+            <input name="bogo" value="not-bogo" type="radio" checked /> Not BOGO</label>
+          <label>
+            <input name="bogo" value="bogo" type="radio" /> BOGO</label>
+        </div>
+
+        <div class="half">
+          <!--<span class="subhead">COUPON TYPE</span>
+          <label>
+            <input name="couponType" value="display" type="radio" checked /> Display</label>
+          <label>
+            <input name="couponType" value="social" type="radio" /> Social</label>
+          <label>
+            <input name="couponType" value="pandora" type="radio" /> Pandora</label>
+          <label>
+            <input name="couponType" value="pandora" type="radio" /> Other:
+            <input type="text" name="otherType" id="otherType" class="not-wide" />
+          </label>-->
+        </div>
+
+        <input type="submit" name="submit" id="submit" value="GENERATE" />
+      </form>
+    </div>
+  </div>
+  <script>
+    jQuery(function ($) {
+
+      //set datepickers
+      $('.datepicker').datepicker();
+
+      //check form
+      $('#generatorForm').submit(function () {
+        //reset form
+        var valid = true;
+        $("#errors").empty();
+
+        //check location
+        if ($.trim($('#location').val()).length < 1) {
+          valid = false;
+          $('<li>Please add a location</li>').appendTo($('#errors'));
+        }
+
+        //check coupon code
+        if ($.trim($('#couponCode').val()).length < 1) {
+          valid = false;
+          $('<li>Add a coupon code</li>').appendTo($('#errors'));
+        }
+        
+        //check coupon code
+        if ($.trim($('#sthdate').val()).length < 1) {
+          valid = false;
+          $('<li>Include a <em>Share the Health</em> Date</li>').appendTo($('#errors'));
+        }
+        
+        //check coupon code
+        if ($.trim($('#sthtime').val()).length < 1) {
+          valid = false;
+          $('<li>Include a <em>Share the Health</em> Time</li>').appendTo($('#errors'));
+        }
+
+        //check coupon expiration
+        if ($.trim($('#couponExpiration').val()).length < 1) {
+          valid = false;
+          $('<li>Add a coupon expiration date</li>').appendTo($('#errors'));
+        }
+
+        if ($('#bogoEndDate').is(':visible')) {
+          if ($.trim($('#bogoEndDate').val()).length < 1) {
+            valid = false;
+            $('<li>Add a BOGO end date</li>').appendTo($('#errors'));
+          }
+        }
+        
+        if (valid ==  false){
+          $('html, body').animate({
+            scrollTop: $('#errors').offset().top
+          });
+          return false;
+        }                                 
+
+      });
+
+      //show hide bogo fields
+      $('input[name="bogo"]').change(function () {
+        if ($(this).val() == 'bogo') {
+          $('.bogo-fields').fadeIn();
+        } else {
+          $('.bogo-fields').fadeOut();
+        }
+      });
+
+    });
+  </script>
+</body>
+
+</html>
